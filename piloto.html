@@ -10,175 +10,201 @@
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     <title>MotoGP - Piloto</title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="icon" href="multimedia/favicon_johann_zarco.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Datos con el contenidos que aparece en el navegador -->
-    <h1>MotoGP Desktop</h1>
-    <nav>
-        <a href="index.html" title="Página de inicio">Inicio</a> |
-        <a href="piloto.html" title="Información del piloto">Piloto</a> |
-        <a href="circuito.html" title="Información del circuito">Circuito</a> |
-        <a href="meteorologia.html" title="Previsión meteorológica">Meteorología</a> |
-        <a href="clasificaciones.html" title="Clasificaciones">Clasificaciones</a> |
-        <a href="juegos.html" title="Juegos">Juegos</a> |
-        <a href="ayuda.html" title="Ayuda y soporte">Ayuda</a>
-    </nav>
+    <header>
+        <h1><a href="index.html" title="Volver a la página principal">MotoGP Desktop</a></h1>
+        <nav>
+            <a href="index.html" title="Página de inicio">Inicio</a> |
+            <a href="piloto.html" title="Información del piloto">Piloto</a> |
+            <a href="circuito.html" title="Información del circuito">Circuito</a> |
+            <a href="meteorologia.html" title="Previsión meteorológica">Meteorología</a> |
+            <a href="clasificaciones.html" title="Clasificaciones">Clasificaciones</a> |
+            <a href="juegos.html" title="Juegos">Juegos</a> |
+            <a href="ayuda.html" title="Ayuda y soporte">Ayuda</a>
+        </nav>
+    </header>
 
-    <h2>Johann Zarco</h2>
-    <p>
-        Johann Zarco (nacido el 16 de julio de 1990 en Cannes, Alpes Marítimos) es un piloto francés de motociclismo. 
-        Ha sido dos veces campeón del mundo en la categoría Moto2, en las temporadas 2015 y 2016, y subcampeón de 125cc en 2011.
-    </p>
-    <p>
-        Desde 2017 compite en la categoría reina, MotoGP, donde ha logrado destacados resultados: 
-        fue quinto en los campeonatos de 2021 y 2023 con el equipo Pramac Racing, y sexto en 2017 y 2018 con el Monster Yamaha Tech 3. 
-        Actualmente corre para el equipo LCR Honda Castrol.
-    </p>
-    <p>
-        Con un total de 18 victorias, Zarco es el piloto francés con más triunfos en la historia del Campeonato del Mundo de Motociclismo, 
-        superando a Fabio Quartararo (12 victorias) y a Christian Sarron, Olivier Jacque y Arnaud Vincent (cada uno con 7). 
-        Además, ha ganado las 8 Horas de Suzuka en dos ocasiones consecutivas, en 2024 y 2025, pilotando una Honda CBR1000RR.
-    </p>
+    <p><a href="index.html">Inicio</a> >> Piloto</p>
 
-    <picture>
-        <!-- Imagen para móviles -->
-        <source srcset="multimedia/zarco-movil.png" media="(max-width: 465px)" />
+    <main>
+        <article>
+            <section>
+                <h2>Johann Zarco</h2>
+                <p>
+                    Johann Zarco (nacido el 16 de julio de 1990 en Cannes, Alpes Marítimos) es un piloto francés de motociclismo. 
+                    Ha sido dos veces campeón del mundo en la categoría Moto2, en las temporadas 2015 y 2016, y subcampeón de 125cc en 2011.
+                </p>
+                <p>
+                    Desde 2017 compite en la categoría reina, MotoGP, donde ha logrado destacados resultados: 
+                    fue quinto en los campeonatos de 2021 y 2023 con el equipo Pramac Racing, y sexto en 2017 y 2018 con el Monster Yamaha Tech 3. 
+                    Actualmente corre para el equipo LCR Honda Castrol.
+                </p>
+                <p>
+                    Con un total de 18 victorias, Zarco es el piloto francés con más triunfos en la historia del Campeonato del Mundo de Motociclismo, 
+                    superando a Fabio Quartararo (12 victorias) y a Christian Sarron, Olivier Jacque y Arnaud Vincent (cada uno con 7). 
+                    Además, ha ganado las 8 Horas de Suzuka en dos ocasiones consecutivas, en 2024 y 2025, pilotando una Honda CBR1000RR.
+                </p>
 
-        <!-- Imagen para tablets -->
-        <source srcset="multimedia/zarco-tablet.png" media="(max-width: 799px)" />
+                <picture>
+                    <!-- Imagen para móviles -->
+                    <source srcset="multimedia/zarco-movil.png" media="(max-width: 465px)" />
 
-        <!-- Imagen para monitores -->
-        <source srcset="multimedia/zarco.png" media="(min-width: 800px)" />
+                    <!-- Imagen para tablets -->
+                    <source srcset="multimedia/zarco-tablet.png" media="(max-width: 799px)" />
 
-        <!-- Imagen por si el navegador no soportase <picture> -->
-        <img src="multimedia/zarco.png" alt="Imagen de Johann Zarco" />
-    </picture>
+                    <!-- Imagen para monitores -->
+                    <source srcset="multimedia/zarco.png" media="(min-width: 800px)" />
 
-    <h4>Datos personales</h4>
-    <ul>
-        <li>Fecha de nacimiento: 16 de julio de 1990</li>
-        <li>Lugar de nacimiento: Cannes, Francia</li>
-        <li>Altura: 1.71 m</li>
-        <li>Peso: 59 kg</li>
-        <li>Moto: Honda RC213V</li>
-        <li>Dorsal: 5</li>
-    </ul>
+                    <!-- Imagen por si el navegador no soportase <picture> -->
+                    <img src="multimedia/zarco.png" alt="Imagen de Johann Zarco" />
+                </picture>
 
-    <h4>Resumen Temporada Anterior</h4>
-    <table>
-        <thead>
-            <tr>
-            <th>Temporada</th>
-            <th>Puntos</th>
-            <th>Clasificación final</th>
-            <th>Poles</th>
-            <th>Victorias</th>
-            <th>Podios</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td>2024</td>
-            <td>55</td>
-            <td>17º</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            </tr>
-        </tbody>
-    </table>
+                <audio controls title="Audio de Zarco">
+                    <source src="multimedia/zarco.mp3" type="audio/mpeg">
+                    <source src="multimedia/zarco.wav" type="audio/wav">
+                    Tu navegador no soporta el elemento <code>audio</code>
+                </audio>
+            </section>
 
-    <h4>Trayectoria</h4>
+            <section>
+                <h4>Datos personales</h4>
+                <ul>
+                    <li>Fecha de nacimiento: 16 de julio de 1990</li>
+                    <li>Lugar de nacimiento: Cannes, Francia</li>
+                    <li>Altura: 1.71 m</li>
+                    <li>Peso: 59 kg</li>
+                    <li>Moto: Honda RC213V</li>
+                    <li>Dorsal: 5</li>
+                </ul>
+            </section>
 
-        <p>
-            <strong>Johann Zarco</strong>, antiguo campeón de la Red Bull Rookies Cup, debutó en el Campeonato del Mundo de 125cc en 2009. 
-            Dos años más tarde, en 2011, logró el subcampeonato con el equipo de Aki Ajo. Posteriormente dio el salto a Moto2™, donde durante
-            tres temporadas consiguió seis podios. En 2015 regresó al equipo de Ajo en la categoría intermedia y conquistó el título mundial. 
-            Un año después, en 2016, hizo historia al revalidar el campeonato, convirtiéndose en el primer piloto en ganar dos veces el título
-            de Moto2™ desde su creación en 2010.
-        </p>
+            <section>
+                <h4>Resumen Temporada Anterior</h4>
+                <table>
+                    <caption>Temporada 2024 de Johann Zarco</caption>
+                    <thead>
+                        <tr>
+                            <th id="temporada" scope="col">Temporada</th>
+                            <th id="puntos" scope="col">Puntos</th>
+                            <th id="clasificacion" scope="col">Clasificación final</th>
+                            <th id="poles" scope="col">Poles</th>
+                            <th id="victorias" scope="col">Victorias</th>
+                            <th id="podios" scope="col">Podios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="temporada">2024</td>
+                            <td headers="puntos">55</td>
+                            <td headers="clasificacion">17º</td>
+                            <td headers="poles">0</td>
+                            <td headers="victorias">0</td>
+                            <td headers="podios">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-        <p>
-            Zarco se convirtió así en el primer francés en ganar más de un título mundial en motociclismo. En 2017 ascendió a la categoría 
-            reina, MotoGP™, y firmó un debut impresionante: tres podios y dos poles en su primer año. Continuó en 2018 con el equipo Monster 
-            Yamaha Tech 3, donde sumó más podios y finalizó la temporada como el mejor piloto de un equipo independiente.
-        </p>
+            <section>
+                <h4>Trayectoria</h4>
+                <p>
+                    <strong>Johann Zarco</strong>, antiguo campeón de la Red Bull Rookies Cup, debutó en el Campeonato del Mundo de 125cc en 2009. 
+                    Dos años más tarde, en 2011, logró el subcampeonato con el equipo de Aki Ajo. Posteriormente dio el salto a Moto2™, donde durante
+                    tres temporadas consiguió seis podios. En 2015 regresó al equipo de Ajo en la categoría intermedia y conquistó el título mundial. 
+                    Un año después, en 2016, hizo historia al revalidar el campeonato, convirtiéndose en el primer piloto en ganar dos veces el título
+                    de Moto2™ desde su creación en 2010.
+                </p>
+                <p>
+                    Zarco se convirtió así en el primer francés en ganar más de un título mundial en motociclismo. En 2017 ascendió a la categoría 
+                    reina, MotoGP™, y firmó un debut impresionante: tres podios y dos poles en su primer año. Continuó en 2018 con el equipo Monster 
+                    Yamaha Tech 3, donde sumó más podios y finalizó la temporada como el mejor piloto de un equipo independiente.
+                </p>
+                <p>
+                    En 2019 fichó por Red Bull KTM Factory Racing para formar parte del ambicioso proyecto de la marca austriaca en MotoGP™. Sin
+                    embargo, tras una primera mitad de temporada muy complicada, Zarco decidió abandonar el equipo antes de terminar su contrato.
+                    A finales de ese año, como piloto libre, compitió en las tres últimas carreras con LCR Honda Idemitsu, en sustitución de Takaaki 
+                    Nakagami. Poco después, firmó con Reale Avintia Racing.
+                </p>
+                <p>
+                    Durante 2020, compitiendo para Ducati y el equipo Esponsorama Racing, logró un podio en el Gran Premio de la República Checa. Este 
+                    resultado le valió un ascenso al equipo oficial satélite, Pramac Racing, en 2021. Ese año comenzó con fuerza, consiguiendo dos 
+                    podios consecutivos en Catar y liderando por primera vez el campeonato. También subió al podio en Le Mans y Cataluña, aunque en 
+                    la segunda mitad de la temporada sus opciones al título se desvanecieron debido a problemas físicos en el brazo. Terminó finalmente 
+                    en quinta posición en la clasificación general.
+                </p>
+                <p>
+                    Zarco continuó en Pramac durante 2022, aunque la victoria seguía resistiéndose. Sumó cuatro podios y dos poles, y se convirtió en 
+                    el piloto con más podios y poles sin haber ganado una carrera en MotoGP™.
+                </p>
+                <p>
+                    Ese dato cambió finalmente en 2023. En el Gran Premio de Australia, disputado en Phillip Island, Zarco logró su primera victoria 
+                    en MotoGP™, celebrando con su tradicional <em>backflip</em>. Fue un momento histórico que cerró años de esfuerzo y constancia.
+                </p>
+                <p>
+                    En 2024 afrontó un nuevo desafío al unirse al equipo CASTROL Honda LCR. Su rendimiento fue muy positivo, terminando la temporada 
+                    como el mejor piloto de Honda (HRC) en la clasificación. Para 2025, su objetivo es continuar esa línea ascendente y consolidarse 
+                    como uno de los referentes de la marca japonesa.
+                </p>
+            
+                <video controls muted width="640" height="360" poster="multimedia/zarco-celebration.jpeg" title="Celebración de Zarco en carrera">
+                    <source src="multimedia/zarco.webm" type="video/webm">
+                    <source src="multimedia/zarco.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento <code>video</code>.
+                </video>
+            </section>
 
-        <p>
-            En 2019 fichó por Red Bull KTM Factory Racing para formar parte del ambicioso proyecto de la marca austriaca en MotoGP™. Sin
-            embargo, tras una primera mitad de temporada muy complicada, Zarco decidió abandonar el equipo antes de terminar su contrato.
-            A finales de ese año, como piloto libre, compitió en las tres últimas carreras con LCR Honda Idemitsu, en sustitución de Takaaki 
-            Nakagami. Poco después, firmó con Reale Avintia Racing.
-        </p>
+            <section>
+                <h4>Equipos anteriores</h4>
+                <ol>
+                    <li>Monster Yamaha Tech 3 (2017-2018)</li>
+                    <li>Red Bull KTM Factory Racing (2019)</li>
+                    <li>LCR Honda Idemitsu (2019)</li>
+                    <li>Esponsorama Racing (2020)</li>
+                    <li>Pramac Racing (2021)</li>
+                    <li>Prima Pramac Racing (2022-2023)</li>
+                    <li>LCR Honda Castrol (2024-actualidad)</li>
+                </ol>
+            </section>
+        </article>
 
-        <p>
-            Durante 2020, compitiendo para Ducati y el equipo Esponsorama Racing, logró un podio en el Gran Premio de la República Checa. Este 
-            resultado le valió un ascenso al equipo oficial satélite, Pramac Racing, en 2021. Ese año comenzó con fuerza, consiguiendo dos 
-            podios consecutivos en Catar y liderando por primera vez el campeonato. También subió al podio en Le Mans y Cataluña, aunque en 
-            la segunda mitad de la temporada sus opciones al título se desvanecieron debido a problemas físicos en el brazo. Terminó finalmente 
-            en quinta posición en la clasificación general.
-        </p>
+        <aside>
+            <h4>Glosario MotoGP</h4>
+            <dl>
+                <dt>Chicane</dt>
+                <dd>Serie de curvas pronunciadas en una carretera o circuito para reducir la velocidad de los vehículos.</dd>
 
-        <p>
-            Zarco continuó en Pramac durante 2022, aunque la victoria seguía resistiéndose. Sumó cuatro podios y dos poles, y se convirtió en 
-            el piloto con más podios y poles sin haber ganado una carrera en MotoGP™.
-        </p>
+                <dt>Pole Position</dt>
+                <dd>Primera posición en la parrilla de salida, obtenida por el piloto más rápido en la clasificación previa a la carrera.</dd>
 
-        <p>
-            Ese dato cambió finalmente en 2023. En el Gran Premio de Australia, disputado en Phillip Island, Zarco logró su primera victoria 
-            en MotoGP™, celebrando con su tradicional <em>backflip</em>. Fue un momento histórico que cerró años de esfuerzo y constancia.
-        </p>
+                <dt>Tacómetro</dt>
+                <dd>Instrumento de medición que muestra las revoluciones por minuto del motor.</dd>
 
-        <p>
-            En 2024 afrontó un nuevo desafío al unirse al equipo CASTROL Honda LCR. Su rendimiento fue muy positivo, terminando la temporada 
-            como el mejor piloto de Honda (HRC) en la clasificación. Para 2025, su objetivo es continuar esa línea ascendente y consolidarse 
-            como uno de los referentes de la marca japonesa.
-        </p>
+                <dt>Control de tracción</dt>
+                <dd>Sistema de seguridad que evita el deslizamiento de la rueda trasera al acelerar, ayudando a mantener la adherencia de las ruedas al suelo.</dd>
 
-    <h4>Equipos anteriores</h4>
-    <ol>
-        <li>Monster Yamaha Tech 3 (2017-2018)</li>
-        <li>Red Bull KTM Factory Racing (2019)</li>
-        <li>LCR Honda Idemitsu (2019)</li>
-        <li>Esponsorama Racing (2020)</li>
-        <li>Pramac Racing (2021)</li>
-        <li>Prima Pramac Racing (2022-2023)</li>
-        <li>LCR Honda Castrol (2024-actualidad)</li>
-    </ol>
+                <dt>Parrilla de salida</dt>
+                <dd>Formación en la que los pilotos se colocan antes del inicio de la carrera según su posición de clasificación.</dd>
+            </dl>
 
-    <h4>Glosario MotoGP</h4>
-    <dl>
-        <dt>Chicane</dt>
-        <dd>Serie de curvas pronunciadas en una carretera o circuito para reducir la velocidad de los vehículos.</dd>
-
-        <dt>Pole Position</dt>
-        <dd>Primera posición en la parrilla de salida, obtenida por el piloto más rápido en la clasificación previa a la carrera.</dd>
-
-        <dt>Tacómetro</dt>
-        <dd>Instrumento de medición que muestra las revoluciones por minuto del motor.</dd>
-
-        <dt>Control de tracción</dt>
-        <dd>Sistema de seguridad que evita el deslizamiento de la rueda trasera al acelerar, ayudando a mantener la adherencia de las ruedas al suelo.</dd>
-
-        <dt>Parrilla de salida</dt>
-        <dd>Formación en la que los pilotos se colocan antes del inicio de la carrera según su posición de clasificación.</dd>
-    </dl>
-
-    <h4>Enlaces de interés</h4>
-    <ul>
-        <li>
-            <a href="https://www.motogp.com/en/riders/johann-zarco/4a439bde-305a-4995-b3e7-783fa99f784a?tab=overview" target="_blank">Perfil de Johann Zarco en MotoGP.com</a>
-        </li>
-        <li>
-            <a href="https://es.wikipedia.org/wiki/Johann_Zarco" target="_blank">Johann Zarco en Wikipedia</a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/johannzarco/#" target="_blank">Instagram (@johannzarco)</a>
-        </li>
-        <li>
-            <a href="https://x.com/JohannZarco1" target="_blank">X (@JohannZarco1)</a>
-        </li>
-    </ul>
+            <h4>Enlaces de interés</h4>
+            <ul>
+                <li>
+                    <a href="https://www.motogp.com/en/riders/johann-zarco/4a439bde-305a-4995-b3e7-783fa99f784a?tab=overview" target="_blank">Perfil de Johann Zarco en MotoGP.com</a>
+                </li>
+                <li>
+                    <a href="https://es.wikipedia.org/wiki/Johann_Zarco" target="_blank">Johann Zarco en Wikipedia</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/johannzarco/#" target="_blank">Instagram (@johannzarco)</a>
+                </li>
+                <li>
+                    <a href="https://x.com/JohannZarco1" target="_blank">X (@JohannZarco1)</a>
+                </li>
+            </ul>
+        </aside>
+    </main>
 </body>
 </html>
