@@ -26,6 +26,8 @@ header nav a {
     color: #ffffff;
     background-color: transparent;
     text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 /* 0,0,2 */
@@ -51,6 +53,8 @@ p a {
     color: #228B22;
     background-color: transparent;
     text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 /* 0,0,2 */
@@ -71,6 +75,8 @@ aside a {
     color: #228B22;
     background-color: transparent;
     text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 /* 0,0,2 */
@@ -98,5 +104,3 @@ h2, h3, h4, h5, h6 {
     color: #8B0000;
     background-color: transparent;
 }
-
-/* no se despliega esta versión xd */
