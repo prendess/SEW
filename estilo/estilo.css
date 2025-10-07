@@ -17,14 +17,14 @@ header {
 /* 0,0,2 */
 header h1 a {
     color: #ffffff;
-    background-color: transparent;
+    background-color: #196719;
     text-decoration: none;
 }
 
 /* 0,0,2 */
 header nav a {
     color: #ffffff;
-    background-color: transparent;
+    background-color: #196719;
     text-decoration: none;
     font-weight: bold;
 }
@@ -32,19 +32,19 @@ header nav a {
 /* 0,0,2 */
 header nav a:visited {
     color: #ffffff;
-    background-color: transparent;
+    background-color: #196719;
 }
 
 /* 0,0,2 */
 header nav a:hover {
     color: #ffffff;
-    background-color: transparent;
+    background-color: #196719;
 }
 
 /* 0,0,2 */
 header nav a:active {
     color: #ffffff;
-    background-color: transparent;
+    background-color: #196719;
 }
 
 /* 0,0,2 */
