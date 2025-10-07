@@ -10,7 +10,7 @@ body {
 
 /* 0,0,1 */
 header {
-    background-color: #228B22;
+    background-color: #196719;
     color: transparent;
 }
 
@@ -26,7 +26,6 @@ header nav a {
     color: #ffffff;
     background-color: transparent;
     text-decoration: none;
-    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -50,51 +49,49 @@ header nav a:active {
 
 /* 0,0,2 */
 p a { 
-    color: #228B22;
+    color: #196719;
     background-color: transparent;
     text-decoration: none;
-    font-size: 1.1rem;
     font-weight: bold;
 }
 
 /* 0,0,2 */
 p a:visited {
-    color: #228B22;
+    color: #196719;
     background-color: transparent;
 }
 
 /* 0,0,2 */
 p a:hover {
-    color: #228B22;
+    color: #196719;
     background-color: transparent;
     text-decoration: none;
 }
 
 /* 0,0,2 */
 aside a { 
-    color: #228B22;
+    color: #196719;
     background-color: transparent;
     text-decoration: none;
-    font-size: 1.1rem;
     font-weight: bold;
 }
 
 /* 0,0,2 */
 aside a:visited {
-    color: #228B22;
+    color: #196719;
     background-color: transparent;
 }
 
 /* 0,0,2 */
 aside a:hover {
-    color: #228B22;
+    color: #196719;
     background-color: transparent;
     text-decoration: none;
 }
 
 /* 0,0,2 */
 aside a:active {
-    color: #228B22;
+    color: #196719;
     background-color: transparent;
     text-decoration: none;
 }
