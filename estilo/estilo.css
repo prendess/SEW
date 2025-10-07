@@ -1,56 +1,100 @@
 /* Hugo Prendes Menéndez - UO288294 */
 /* Estilos generales del proyecto MotoGP-Desktop */
 
-/* Selector: body (especificidad: 0,0,1) */
+/* 0,0,1 */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #F7F7F7;
-  color: #1D1D1D;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
 }
 
-/* Selector: header (especificidad: 0,0,1) */
+/* 0,0,1 */
 header {
-  background-color: #009639;
-  color: #FFFFFF;
+    background-color: #228B22;
+    color: transparent;
 }
 
-/* Selector: h1, h2, h3, h4, h5, h6 (especificidad: 0,0,1) */
-h1, h2, h3, h4, h5, h6 {
-  color: #E10600;
-  background-color: transparent;
+/* 0,0,2 */
+header h1 a {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-/* Selector: nav (especificidad: 0,0,1) */
-nav {
-  background-color: #1D1D1D;
-  color: #FFFFFF;
-  display: flex;
-  gap: 10px;
-  padding: 10px;
+/* 0,0,2 */
+header nav a {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-/* Selector: a (especificidad: 0,0,1) */
-a {
-  color: #009639;
-  text-decoration: none;
-  background-color: transparent;
+/* 0,0,2 */
+header nav a:visited {
+    color: #ffffff;
+    background-color: transparent;
 }
 
-/* Selector: a:hover (especificidad: 0,1,1) */
-a:hover {
-  color: #E10600;
-  background-color: transparent;
+/* 0,0,2 */
+header nav a:hover {
+    color: #ffffff;
+    background-color: transparent;
 }
 
-/* Selector: a:visited (especificidad: 0,1,1) */
-a:visited {
-  color: #009639;
-  background-color: transparent;
+/* 0,0,2 */
+header nav a:active {
+    color: #ffffff;
+    background-color: transparent;
 }
 
-/* Selector: h1 a (especificidad: 0,0,1) */
-h1 a {
-  color: #E10600 !important;
-  text-decoration: none;
-  background-color: transparent;
+/* 0,0,2 */
+p a { 
+    color: #228B22;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* 0,0,2 */
+p a:visited {
+    color: #228B22;
+    background-color: transparent;
+}
+
+/* 0,0,2 */
+p a:hover {
+    color: #228B22;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* 0,0,2 */
+aside a { 
+    color: #228B22;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* 0,0,2 */
+aside a:visited {
+    color: #228B22;
+    background-color: transparent;
+}
+
+/* 0,0,2 */
+aside a:hover {
+    color: #228B22;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* 0,0,2 */
+aside a:active {
+    color: #228B22;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* 0,0,1 */
+h2, h3, h4, h5, h6 {
+    color: #8B0000;
+    background-color: transparent;
 }
