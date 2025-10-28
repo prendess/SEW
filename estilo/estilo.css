@@ -47,3 +47,8 @@ a {
     font-weight: bold;
     text-decoration: underline;
 }
+
+/* 0,0,2 */
+header + p {
+    font-size: 0.85em;
+}
