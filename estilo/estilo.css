@@ -25,6 +25,11 @@ header a {
     background-color: #196719;
 }
 
+header a:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 0.4em;
+}
+
 /* 0,0,2 */
 nav a {
     margin-right: 0.5em;
