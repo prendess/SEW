@@ -44,5 +44,6 @@ a {
 
 /* 0,1,0 */
 .active {
-    color: #FF4500
+    font-weight: bold;
+    text-decoration: underline;
 }
