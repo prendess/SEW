@@ -62,3 +62,143 @@ header + p {
 h1 {
     font-size: 2.5em;
 }
+
+/* 0,0,2 */
+section ul {
+    list-style-type: none;
+    padding: 1em;
+    border: 1px solid #E8E8E8;
+    border-radius: 0.5em;
+    background-color: #E8E8E8;
+    color: #000000;
+    max-width: 100%;
+}
+
+/* 0,0,3 */
+section ul li {
+    padding: 0.4em 0;
+    border-bottom: 2px solid #a6a6a6;
+}
+
+/* 0,1,3 */
+section ul li:last-child {
+    border-bottom: none;
+}
+
+/* 0,0,2 */
+section ol {
+    list-style: none;
+    padding-left: 1.5em;
+    border-left: 3px solid #196719;
+    margin-left: 1em;
+}
+
+/* 0,0,3 */
+section ol li {
+    position: relative;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+/* 0,1,3 */
+section ol li::before {
+    content: "";
+    position: absolute;
+    left: -0.65em;
+    top: 0.4em;
+    width: 0.8em;
+    height: 0.8em;
+    background-color: #196719;
+    color: transparent;
+    border-radius: 50%;
+}
+
+/* 0,0,1 */
+dt {
+    font-weight: bold;
+    color: #196719;
+    background-color: transparent;
+}
+
+/* 0,0,1 */
+dd {
+    margin-bottom: 0.5em;
+}
+
+/* 0,1,1 */
+dd::before {
+    content: "• ";
+    color: #196719;
+    background-color: transparent;
+}
+
+/* 0,0,1 */
+table {
+    width: 100%;
+    margin: 0.5em 0;
+    border-collapse: collapse;
+    border: 2px solid #196719;
+    font-size: 1em;
+}
+
+/* 0,0,1 */
+caption {
+    font-weight: bold;
+    color: #196719;
+    background-color: transparent;
+    padding: 0.5em 0;
+    font-size: 1.1em;
+    caption-side: top;
+    text-align: left;
+}
+
+/* 0,0,2 */
+thead th {
+    background-color: #196719;
+    color: #FFFFFF;
+    padding: 0.6em;
+    text-align: center;
+    border-right: 1px solid #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+/* 0,0,2 */
+tbody td {
+    padding: 0.6em;
+    text-align: center;
+    border-right: 1px solid #E8E8E8;
+    color: #000000;
+    background-color: transparent;
+}
+
+/* 0,1,2 */
+tbody tr {
+    background-color: #E8E8E8;
+    color: transparent;
+}
+
+/* 0,0,2 */
+aside ul {
+    list-style-type: none; 
+    padding-left: 1em;
+}
+
+/* 0,0,3 */
+aside ul li {
+    padding-left: 1.5em;
+    position: relative;
+    margin-bottom: 0.3em;
+}
+
+/* 0,1,3 */
+aside ul li::before {
+    content: "➤";
+    color: #196719;
+    background-color: transparent;
+    font-size: 0.9em;
+    position: absolute; 
+    left: 0;
+    top: 0.25em;
+}

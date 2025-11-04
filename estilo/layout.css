@@ -23,7 +23,7 @@ nav {
     /* 0,0,1 */
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; /* Propiedad redefinida debido al uso de @media-queries (genera advertencia) */
     }
 
     /* 0,0,2 */
@@ -35,7 +35,7 @@ nav {
     /* 0,0,1 */
     nav {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; /* Propiedad redefinida debido al uso de @media-queries (genera advertencia) */
     }
 
     /* 0,0,2 */
@@ -62,4 +62,5 @@ nav {
         width: 70%;
         height: auto;
     } */
+    
 }
