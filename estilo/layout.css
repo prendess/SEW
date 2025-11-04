@@ -53,4 +53,13 @@ nav {
     audio {
         width: 100%;
     }
+
+    /* 0,0,1 */
+    /* img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        width: 70%;
+        height: auto;
+    } */
 }
