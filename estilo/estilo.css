@@ -72,6 +72,7 @@ section ul {
     background-color: #E8E8E8;
     color: #000000;
     max-width: 100%;
+    font-size: 0.85em;
 }
 
 /* 0,0,3 */
@@ -139,7 +140,7 @@ table {
     margin: 0.5em 0;
     border-collapse: collapse;
     border: 2px solid #196719;
-    font-size: 1em;
+    font-size: 0.95em;
 }
 
 /* 0,0,1 */
