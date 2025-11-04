@@ -123,6 +123,7 @@ dt {
 /* 0,0,1 */
 dd {
     margin-bottom: 0.5em;
+    text-align: justify;
 }
 
 /* 0,1,1 */
@@ -201,4 +202,9 @@ aside ul li::before {
     position: absolute; 
     left: 0;
     top: 0.25em;
+}
+
+/* 0,0,1 */
+p {
+    text-align: justify;
 }
