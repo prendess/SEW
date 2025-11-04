@@ -25,6 +25,7 @@ header a {
     background-color: #196719;
 }
 
+/* 0,1,2 */
 header a:hover {
     text-decoration-line: underline;
     text-underline-offset: 0.4em;
@@ -50,10 +51,14 @@ a {
 /* 0,1,0 */
 .active {
     font-weight: bold;
-    text-decoration: underline;
 }
 
 /* 0,0,2 */
 header + p {
     font-size: 0.85em;
+}
+
+/* 0,0,1 */
+h1 {
+    font-size: 2.5em;
 }

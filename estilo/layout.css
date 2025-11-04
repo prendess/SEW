@@ -1,0 +1,19 @@
+/* Hugo Prendes Menéndez - UO288294 */
+
+/* 0,0,1 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* 0,0,1 */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    align-items: center;
+}
