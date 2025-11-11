@@ -1,0 +1,36 @@
+<!ELEMENT circuito (nombre, longitud, anchura, fecha, hora, vueltas, localidad, pais, patrocinador, referencias, fotografias, videos, origen, puntos, vencedor, clasificacion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+<!ATTLIST longitud unidad CDATA #REQUIRED>
+<!ELEMENT anchura (#PCDATA)>
+<!ATTLIST anchura unidad CDATA #REQUIRED>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT vueltas (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT patrocinador (#PCDATA)>
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT fotografias (fotografia+)>
+<!ELEMENT fotografia (ruta, descripcion)>
+<!ELEMENT ruta (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT videos (video+)>
+<!ELEMENT video (ruta, descripcion)>
+<!ELEMENT origen (longitudGeo, latitudGeo, altitudGeo)>
+<!ELEMENT longitudGeo (#PCDATA)>
+<!ELEMENT latitudGeo (#PCDATA)>
+<!ELEMENT altitudGeo (#PCDATA)>
+<!ELEMENT puntos (punto+)>
+<!ELEMENT punto (distancia, puntoFinal, sector)>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia unidad CDATA #REQUIRED>
+<!ELEMENT puntoFinal (longitudGeo, latitudGeo, altitudGeo)>
+<!ELEMENT sector (#PCDATA)>
+<!ELEMENT vencedor (nombre, tiempo)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT clasificacion (posicion+)>
+<!ELEMENT posicion (puesto, nombre, puntosMundial)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT puntosMundial (#PCDATA)>

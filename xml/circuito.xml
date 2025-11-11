@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+<circuito>
+    <nombre>Silverstone</nombre>
+    <longitud unidad="m">5901</longitud>
+    <anchura unidad="m">12</anchura>
+    <fecha>2025-05-25</fecha>
+    <hora>14:00</hora>
+    <vueltas>20</vueltas>
+    <localidad>Silverstone</localidad>
+    <pais>Reino Unido</pais>
+    <patrocinador>Tissot</patrocinador>
+    <referencias>
+        <referencia>https://es.wikipedia.org/wiki/Circuito_de_Silverstone</referencia>
+        <referencia>https://www.silverstone.co.uk/</referencia>
+        <referencia>https://www.dazn.com/es-ES/news/motor/circuito-de-silverstone-donde-esta-como-es-caracteristicas-como-llegar-y-fotos-del-escenario-del-gp-de-gran-bretana-del-mundial-de-f1-y-motogp/je8dn5v9wixy1oma2gslxrqcl</referencia>
+    </referencias>
+    <fotografias>
+        <fotografia>
+            <ruta>multimedia/vista-aerea.jpg</ruta>
+            <descripcion>Vista aérea del circuito de Silverstone</descripcion>
+        </fotografia>
+        <fotografia>
+            <ruta>multimedia/instalaciones.jpg</ruta>
+            <descripcion>Detalle de las instalaciones principales del circuito</descripcion>
+        </fotografia>
+        <fotografia>
+            <ruta>multimedia/map.jpg</ruta>
+            <descripcion>Ubicación del circuito de Silverstone en el mapa de Reino Unido</descripcion>
+        </fotografia>
+    </fotografias>
+    <videos>
+        <video>
+            <ruta>multimedia/silverstone-trailer.mp4</ruta>
+            <descripcion>Resumen del GP de Silverstone 2025 de MotoGP</descripcion>
+        </video>
+    </videos>
+    <origen>
+        <longitudGeo>-1.02228</longitudGeo>
+        <latitudGeo>52.06925</latitudGeo>
+        <altitudGeo>116</altitudGeo>
+    </origen>
+    <puntos>
+        <punto>
+            <distancia unidad="m">0</distancia>
+            <puntoFinal>
+                <longitudGeo>0</longitudGeo>
+                <latitudGeo>0</latitudGeo>
+                <altitudGeo>0</altitudGeo>
+            </puntoFinal>
+            <sector>0</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">0</distancia>
+            <puntoFinal>
+                <longitudGeo>0</longitudGeo>
+                <latitudGeo>0</latitudGeo>
+                <altitudGeo>0</altitudGeo>
+            </puntoFinal>
+            <sector>0</sector>
+        </punto>
+    </puntos>
+    <vencedor>
+        <nombre>Marco Bezzecchi</nombre>
+        <tiempo>38:16.036</tiempo>
+    </vencedor>
+    <clasificacion>
+        <posicion>
+            <puesto>1</puesto>
+            <nombre>Marc Márquez</nombre>
+            <puntosMundial>196</puntosMundial>
+        </posicion>
+        <posicion>
+            <puesto>2</puesto>
+            <nombre>Álex Márquez</nombre>
+            <puntosMundial>172</puntosMundial>
+        </posicion>
+        <posicion>
+            <puesto>3</puesto>
+            <nombre>Francesco Bagnaia</nombre>
+            <puntosMundial>124</puntosMundial>
+        </posicion>
+    </clasificacion>
+</circuito> 
