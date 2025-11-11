@@ -7,7 +7,7 @@
     <fecha>2025-05-25</fecha>
     <hora>14:00</hora>
     <vueltas>20</vueltas>
-    <localidad>Silverstone</localidad>
+    <localidad>Towcester</localidad>
     <pais>Reino Unido</pais>
     <patrocinador>Tissot</patrocinador>
     <referencias>
@@ -42,22 +42,454 @@
     </origen>
     <puntos>
         <punto>
-            <distancia unidad="m">0</distancia>
+            <distancia unidad="m">287.92</distancia>
             <puntoFinal>
-                <longitudGeo>0</longitudGeo>
-                <latitudGeo>0</latitudGeo>
-                <altitudGeo>0</altitudGeo>
+                <longitudGeo>-1.01967</longitudGeo>
+                <latitudGeo>52.07128</latitudGeo>
+                <altitudGeo>116</altitudGeo>
             </puntoFinal>
-            <sector>0</sector>
+            <sector>1</sector>
         </punto>
         <punto>
-            <distancia unidad="m">0</distancia>
+            <distancia unidad="m">71.42</distancia>
             <puntoFinal>
-                <longitudGeo>0</longitudGeo>
-                <latitudGeo>0</latitudGeo>
-                <altitudGeo>0</altitudGeo>
+                <longitudGeo>-1.01864</longitudGeo>
+                <latitudGeo>52.07134</latitudGeo>
+                <altitudGeo>116</altitudGeo>
             </puntoFinal>
-            <sector>0</sector>
+            <sector>1</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">135.87</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01665</longitudGeo>
+                <latitudGeo>52.07122</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>1</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">95.46</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01542</longitudGeo>
+                <latitudGeo>52.07162</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>1</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">164.17</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01356</longitudGeo>
+                <latitudGeo>52.07254</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>1</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">32.41</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01311</longitudGeo>
+                <latitudGeo>52.07247</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>1</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">121.10</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01249</longitudGeo>
+                <latitudGeo>52.07145</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>1</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">30.98</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01203</longitudGeo>
+                <latitudGeo>52.07147</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>1</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">90.81</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01156</longitudGeo>
+                <latitudGeo>52.07224</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>1</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">91.25</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01145</longitudGeo>
+                <latitudGeo>52.07306</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>1</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">361.57</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01534</longitudGeo>
+                <latitudGeo>52.07526</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>1</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">313.59</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01877</longitudGeo>
+                <latitudGeo>52.07713</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">52.07</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01954</longitudGeo>
+                <latitudGeo>52.07714</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">39.34</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02000</longitudGeo>
+                <latitudGeo>52.07693</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">99.40</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02024</longitudGeo>
+                <latitudGeo>52.07606</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">42.49</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02075</longitudGeo>
+                <latitudGeo>52.07581</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">52.80</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02148</longitudGeo>
+                <latitudGeo>52.07595</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">46.58</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02168</longitudGeo>
+                <latitudGeo>52.07635</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">169.86</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02057</longitudGeo>
+                <latitudGeo>52.07773</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">66.55</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01992</longitudGeo>
+                <latitudGeo>52.07816</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">76.77</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01897</longitudGeo>
+                <latitudGeo>52.07855</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">121.86</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01721</longitudGeo>
+                <latitudGeo>52.07871</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">336.17</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01232</longitudGeo>
+                <latitudGeo>52.07897</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">63.18</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01148</longitudGeo>
+                <latitudGeo>52.07874</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">46.27</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01112</longitudGeo>
+                <latitudGeo>52.07840</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">197.35</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01041</longitudGeo>
+                <latitudGeo>52.07667</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">110.49</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01028</longitudGeo>
+                <latitudGeo>52.07569</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">142.79</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01019</longitudGeo>
+                <latitudGeo>52.07440</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">90.88</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.00962</longitudGeo>
+                <latitudGeo>52.07365</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">51.60</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.00957</longitudGeo>
+                <latitudGeo>52.07319</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">99.97</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01006</longitudGeo>
+                <latitudGeo>52.07234</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">55.84</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01002</longitudGeo>
+                <latitudGeo>52.07183</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">74.55</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.00939</longitudGeo>
+                <latitudGeo>52.07129</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">44.47</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.00927</longitudGeo>
+                <latitudGeo>52.07089</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">52.14</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.00965</longitudGeo>
+                <latitudGeo>52.07049</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">108.63</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01101</longitudGeo>
+                <latitudGeo>52.06998</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">166.37</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01220</longitudGeo>
+                <latitudGeo>52.06867</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>2</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">455.87</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01540</longitudGeo>
+                <latitudGeo>52.06507</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">174.01</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01682</longitudGeo>
+                <latitudGeo>52.06377</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">52.45</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01745</longitudGeo>
+                <latitudGeo>52.06353</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">68.13</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01844</longitudGeo>
+                <latitudGeo>52.06364</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">43.58</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01889</longitudGeo>
+                <latitudGeo>52.06392</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">107.42</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.01959</longitudGeo>
+                <latitudGeo>52.06479</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">92.27</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02045</longitudGeo>
+                <latitudGeo>52.06542</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">174.13</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02218</longitudGeo>
+                <latitudGeo>52.06657</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">73.11</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02308</longitudGeo>
+                <latitudGeo>52.06623</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">69.47</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02384</longitudGeo>
+                <latitudGeo>52.06666</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">78.92</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02429</longitudGeo>
+                <latitudGeo>52.06731</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">35.31</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02434</longitudGeo>
+                <latitudGeo>52.06762</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
+        </punto>
+        <punto>
+            <distancia unidad="m">229.25</distancia>
+            <puntoFinal>
+                <longitudGeo>-1.02228</longitudGeo>
+                <latitudGeo>52.06925</latitudGeo>
+                <altitudGeo>116</altitudGeo>
+            </puntoFinal>
+            <sector>3</sector>
         </punto>
     </puntos>
     <vencedor>
