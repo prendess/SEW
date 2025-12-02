@@ -1,5 +1,39 @@
-<!DOCTYPE HTML>
+<?php
 
+class Clasificacion {
+
+    private $documento;
+
+    public function __construct() {
+        $this->documento = 'xml/circuitoEsquema.xml';
+    }
+
+    public function consultar() {
+
+        $contenidoCompleto = "";
+        
+        $archivo = fopen ($this->documento, "r");
+
+        if ($archivo !== false) {
+            while (!feof($archivo)) {
+                $linea = fgets($archivo); 
+                $contenidoCompleto .= $linea;
+            }
+            fclose ($archivo);
+        } else {
+            error_log("Error al abrir el archivo: " . $this->documento);
+            $contenidoCompleto = "Error: El archivo " . $this->documento . " no se pudo abrir.";
+        }
+        
+        return $contenidoCompleto;
+    }
+
+}
+
+?>
+
+
+<!DOCTYPE HTML>
 <html lang="es">
 <head>
     <!-- Datos que describen el documento -->
