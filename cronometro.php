@@ -102,7 +102,7 @@ if (isset($_POST['accion'])) {
             <a href="piloto.html" title="Información del piloto">Piloto</a>
             <a href="circuito.html" title="Información del circuito">Circuito</a>
             <a href="meteorologia.html" title="Previsión meteorológica">Meteorología</a>
-            <a href="clasificaciones.html" title="Información de clasificaciones">Clasificaciones</a>
+            <a href="clasificaciones.php" title="Información de clasificaciones">Clasificaciones</a>
             <a href="juegos.html" title="Zona de juegos">Juegos</a>
             <a href="ayuda.html" title="Ayuda y soporte">Ayuda</a>
         </nav>
