@@ -22,46 +22,57 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+
 	<xs:element name="nombre" type="xs:string" />
+
 	<xs:element name="longitud">
 		<xs:complexType>
 			<xs:simpleContent>
-				<xs:extension base="xs:string">
-					<xs:attribute name="unidad" type="xs:string" use="required" />
+				<xs:extension base="xs:decimal">
+					<xs:attribute name="unidad" type="xs:string" use="required" fixed="metros" />
 				</xs:extension>
 			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
+
 	<xs:element name="anchura">
 		<xs:complexType>
 			<xs:simpleContent>
-				<xs:extension base="xs:string">
-					<xs:attribute name="unidad" type="xs:string" use="required" />
+				<xs:extension base="xs:decimal">
+					<xs:attribute name="unidad" type="xs:string" use="required" fixed="metros" />
 				</xs:extension>
 			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="fecha" type="xs:string" />
-	<xs:element name="hora" type="xs:string" />
-	<xs:element name="vueltas" type="xs:string" />
+
+	<xs:element name="fecha" type="xs:date" />
+
+	<xs:element name="hora" type="xs:time" />
+
+	<xs:element name="vueltas" type="xs:positiveInteger" />
+
 	<xs:element name="localidad" type="xs:string" />
+
 	<xs:element name="pais" type="xs:string" />
+
 	<xs:element name="patrocinador" type="xs:string" />
+
 	<xs:element name="referencias">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element minOccurs="1" maxOccurs="unbounded" ref="referencia" />
+				<xs:element name="referencia" type="xs:string" minOccurs="3" maxOccurs="unbounded" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="referencia" type="xs:string" />
+
 	<xs:element name="fotografias">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element minOccurs="1" maxOccurs="unbounded" ref="fotografia" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fotografia" minOccurs="1" maxOccurs="5" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
 	<xs:element name="fotografia">
 		<xs:complexType>
 			<xs:sequence>
@@ -70,15 +81,19 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+
 	<xs:element name="ruta" type="xs:string" />
+
 	<xs:element name="descripcion" type="xs:string" />
+
 	<xs:element name="videos">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element minOccurs="1" maxOccurs="unbounded" ref="video" />
+				<xs:element ref="video" minOccurs="1" maxOccurs="3" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+
 	<xs:element name="video">
 		<xs:complexType>
 			<xs:sequence>
@@ -87,6 +102,7 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+
 	<xs:element name="origen">
 		<xs:complexType>
 			<xs:sequence>
@@ -96,9 +112,13 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="longitudGeo" type="xs:string" />
-	<xs:element name="latitudGeo" type="xs:string" />
-	<xs:element name="altitudGeo" type="xs:string" />
+	
+	<xs:element name="longitudGeo" type="xs:decimal" />
+
+	<xs:element name="latitudGeo" type="xs:decimal" />
+
+	<xs:element name="altitudGeo" type="xs:decimal" />
+
 	<xs:element name="puntos">
 		<xs:complexType>
 			<xs:sequence>
@@ -106,6 +126,7 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+
 	<xs:element name="punto">
 		<xs:complexType>
 			<xs:sequence>
@@ -115,15 +136,17 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+
 	<xs:element name="distancia">
 		<xs:complexType>
 			<xs:simpleContent>
-				<xs:extension base="xs:string">
-					<xs:attribute name="unidad" type="xs:string" use="required" />
+				<xs:extension base="xs:decimal">
+					<xs:attribute name="unidad" type="xs:string" use="required" fixed="metros" />
 				</xs:extension>
 			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
+
 	<xs:element name="puntoFinal">
 		<xs:complexType>
 			<xs:sequence>
@@ -133,7 +156,9 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="sector" type="xs:string" />
+
+	<xs:element name="sector" type="xs:positiveInteger" />
+
 	<xs:element name="vencedor">
 		<xs:complexType>
 			<xs:sequence>
@@ -142,14 +167,17 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="tiempo" type="xs:string" />
+
+	<xs:element name="tiempo" type="xs:duration" />
+
 	<xs:element name="clasificacion">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element minOccurs="1" maxOccurs="unbounded" ref="posicion" />
+				<xs:element minOccurs="3" maxOccurs="3" ref="posicion" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+
 	<xs:element name="posicion">
 		<xs:complexType>
 			<xs:sequence>
@@ -159,6 +187,9 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="puesto" type="xs:string" />
-	<xs:element name="puntosMundial" type="xs:string" />
+
+	<xs:element name="puesto" type="xs:positiveInteger" />
+
+	<xs:element name="puntosMundial" type="xs:integer" />
+
 </xs:schema>
