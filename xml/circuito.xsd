@@ -29,7 +29,7 @@
 		<xs:complexType>
 			<xs:simpleContent>
 				<xs:extension base="xs:decimal">
-					<xs:attribute name="unidad" type="xs:string" use="required" fixed="metros" />
+					<xs:attribute name="unidad" type="xs:string" use="required" />
 				</xs:extension>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -39,7 +39,7 @@
 		<xs:complexType>
 			<xs:simpleContent>
 				<xs:extension base="xs:decimal">
-					<xs:attribute name="unidad" type="xs:string" use="required" fixed="metros" />
+					<xs:attribute name="unidad" type="xs:string" use="required" />
 				</xs:extension>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -141,7 +141,7 @@
 		<xs:complexType>
 			<xs:simpleContent>
 				<xs:extension base="xs:decimal">
-					<xs:attribute name="unidad" type="xs:string" use="required" fixed="metros" />
+					<xs:attribute name="unidad" type="xs:string" use="required" />
 				</xs:extension>
 			</xs:simpleContent>
 		</xs:complexType>
