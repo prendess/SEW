@@ -30,6 +30,7 @@ def main():
         ns = {'ns': 'http://www.uniovi.es'}
 
         # 2. Extraer coordenadas usando XPath
+        
         # Origen
         lon_orig = raiz.find('.//ns:origen/ns:longitudGeo', ns).text
         lat_orig = raiz.find('.//ns:origen/ns:latitudGeo', ns).text

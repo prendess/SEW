@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0" width="1100" height="500">
+  <rect x="0" y="0" width="1100" height="500" fill="white" strokeWidth="0" stroke="none" />
+  <text x="70" y="40" fontFamily="Arial" fontSize="22" style="font-weight:bold">Altimetría del circuito de Silverstone</text>
+  <line x1="70" y1="430" x2="1030" y2="430" stroke="black" strokeWidth="2" />
+  <line x1="70" y1="70" x2="70" y2="430" stroke="black" strokeWidth="2" />
+  <text x="550" y="490" fontFamily="Arial" fontSize="16" style="text-anchor:middle">Distancia (m)</text>
+  <text x="15" y="250" fontFamily="Arial" fontSize="16" style="writing-mode: tb; glyph-orientation-vertical: 0;">Altitud (m)</text>
+  <line x1="70.0" y1="430" x2="70.0" y2="440" stroke="black" strokeWidth="2" />
+  <text x="70.0" y="455" fontFamily="Arial" fontSize="12" style="text-anchor:middle">0</text>
+  <line x1="233.85356270556363" y1="430" x2="233.85356270556363" y2="440" stroke="black" strokeWidth="2" />
+  <text x="233.85356270556363" y="455" fontFamily="Arial" fontSize="12" style="text-anchor:middle">1000</text>
+  <line x1="397.70712541112727" y1="430" x2="397.70712541112727" y2="440" stroke="black" strokeWidth="2" />
+  <text x="397.70712541112727" y="455" fontFamily="Arial" fontSize="12" style="text-anchor:middle">2000</text>
+  <line x1="561.5606881166909" y1="430" x2="561.5606881166909" y2="440" stroke="black" strokeWidth="2" />
+  <text x="561.5606881166909" y="455" fontFamily="Arial" fontSize="12" style="text-anchor:middle">3000</text>
+  <line x1="725.4142508222545" y1="430" x2="725.4142508222545" y2="440" stroke="black" strokeWidth="2" />
+  <text x="725.4142508222545" y="455" fontFamily="Arial" fontSize="12" style="text-anchor:middle">4000</text>
+  <line x1="889.2678135278182" y1="430" x2="889.2678135278182" y2="440" stroke="black" strokeWidth="2" />
+  <text x="889.2678135278182" y="455" fontFamily="Arial" fontSize="12" style="text-anchor:middle">5000</text>
+  <line x1="60" y1="430.0" x2="70" y2="430.0" stroke="black" strokeWidth="2" />
+  <text x="55" y="435.0" fontFamily="Arial" fontSize="12" style="text-anchor:end">105</text>
+  <line x1="60" y1="408.1818181818182" x2="70" y2="408.1818181818182" stroke="black" strokeWidth="2" />
+  <text x="55" y="413.1818181818182" fontFamily="Arial" fontSize="12" style="text-anchor:end">106</text>
+  <line x1="60" y1="386.3636363636364" x2="70" y2="386.3636363636364" stroke="black" strokeWidth="2" />
+  <text x="55" y="391.3636363636364" fontFamily="Arial" fontSize="12" style="text-anchor:end">107</text>
+  <line x1="60" y1="364.54545454545456" x2="70" y2="364.54545454545456" stroke="black" strokeWidth="2" />
+  <text x="55" y="369.54545454545456" fontFamily="Arial" fontSize="12" style="text-anchor:end">108</text>
+  <line x1="60" y1="342.72727272727275" x2="70" y2="342.72727272727275" stroke="black" strokeWidth="2" />
+  <text x="55" y="347.72727272727275" fontFamily="Arial" fontSize="12" style="text-anchor:end">109</text>
+  <line x1="60" y1="320.9090909090909" x2="70" y2="320.9090909090909" stroke="black" strokeWidth="2" />
+  <text x="55" y="325.9090909090909" fontFamily="Arial" fontSize="12" style="text-anchor:end">110</text>
+  <line x1="60" y1="299.0909090909091" x2="70" y2="299.0909090909091" stroke="black" strokeWidth="2" />
+  <text x="55" y="304.0909090909091" fontFamily="Arial" fontSize="12" style="text-anchor:end">111</text>
+  <line x1="60" y1="277.27272727272725" x2="70" y2="277.27272727272725" stroke="black" strokeWidth="2" />
+  <text x="55" y="282.27272727272725" fontFamily="Arial" fontSize="12" style="text-anchor:end">112</text>
+  <line x1="60" y1="255.45454545454544" x2="70" y2="255.45454545454544" stroke="black" strokeWidth="2" />
+  <text x="55" y="260.45454545454544" fontFamily="Arial" fontSize="12" style="text-anchor:end">113</text>
+  <line x1="60" y1="233.63636363636365" x2="70" y2="233.63636363636365" stroke="black" strokeWidth="2" />
+  <text x="55" y="238.63636363636365" fontFamily="Arial" fontSize="12" style="text-anchor:end">114</text>
+  <line x1="60" y1="211.8181818181818" x2="70" y2="211.8181818181818" stroke="black" strokeWidth="2" />
+  <text x="55" y="216.8181818181818" fontFamily="Arial" fontSize="12" style="text-anchor:end">115</text>
+  <line x1="60" y1="190.0" x2="70" y2="190.0" stroke="black" strokeWidth="2" />
+  <text x="55" y="195.0" fontFamily="Arial" fontSize="12" style="text-anchor:end">116</text>
+  <line x1="60" y1="168.1818181818182" x2="70" y2="168.1818181818182" stroke="black" strokeWidth="2" />
+  <text x="55" y="173.1818181818182" fontFamily="Arial" fontSize="12" style="text-anchor:end">117</text>
+  <line x1="60" y1="146.36363636363637" x2="70" y2="146.36363636363637" stroke="black" strokeWidth="2" />
+  <text x="55" y="151.36363636363637" fontFamily="Arial" fontSize="12" style="text-anchor:end">118</text>
+  <line x1="60" y1="124.54545454545456" x2="70" y2="124.54545454545456" stroke="black" strokeWidth="2" />
+  <text x="55" y="129.54545454545456" fontFamily="Arial" fontSize="12" style="text-anchor:end">119</text>
+  <line x1="60" y1="102.72727272727275" x2="70" y2="102.72727272727275" stroke="black" strokeWidth="2" />
+  <text x="55" y="107.72727272727275" fontFamily="Arial" fontSize="12" style="text-anchor:end">120</text>
+  <line x1="60" y1="80.90909090909088" x2="70" y2="80.90909090909088" stroke="black" strokeWidth="2" />
+  <text x="55" y="85.90909090909088" fontFamily="Arial" fontSize="12" style="text-anchor:end">121</text>
+  <polyline points="70.0,296.9 117.2,290.4 128.9,281.6 151.1,251.1 166.8,222.7 193.7,187.8 199.0,183.5 218.8,181.3 223.9,179.1 238.8,181.3 253.7,187.8 313.0,251.1 364.4,290.4 372.9,294.7 379.3,288.2 395.6,255.5 402.6,238.0 411.2,222.7 418.9,220.5 446.7,251.1 457.6,233.6 470.2,216.2 490.2,200.9 545.2,229.3 555.6,242.4 563.2,253.3 595.5,266.4 613.6,281.6 637.0,299.1 651.9,303.5 660.4,307.8 676.7,312.2 685.9,316.5 698.1,318.7 705.4,320.9 713.9,316.5 731.7,299.1 759.0,266.4 833.7,216.2 862.2,198.7 870.8,194.4 882.0,200.9 889.1,207.5 906.7,233.6 921.8,253.3 950.4,281.6 962.3,294.7 973.7,303.5 986.7,310.0 992.4,310.0 1030.0,296.9" stroke="red" strokeWidth="4" fill="none" />
+</svg>
