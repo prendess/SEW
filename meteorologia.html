@@ -31,33 +31,35 @@
 
     <p><a href="index.html">Inicio</a> >> <strong>Metereología</strong></p>
     
-    <h2>Metereología</h2>
+    <main>
+        <h2>Metereología</h2>
     
-    <section>
-        <h3>Información de la ciudad</h3>
-        <script>
+        <section>
+            <h3>Información de la ciudad</h3>
+            <script>
 
-            var miCiudad = new Ciudad("Towcester", "Reino Unido", "Towcestrian");
+                var miCiudad = new Ciudad("Towcester", "Reino Unido", "Towcestrian");
 
-            var coordenadasTowcester = {
-                latitud: 52.13,
-                longitud: -0.99,
-                altitud: 128
-            };
-            
-            miCiudad.rellenarAtributos(11000, coordenadasTowcester);
+                var coordenadasTowcester = {
+                    latitud: 52.13,
+                    longitud: -0.99,
+                    altitud: 128
+                };
+                
+                miCiudad.rellenarAtributos(11000, coordenadasTowcester);
 
-            document.write("<h4>Localidad:</h4> <p>" + miCiudad.getNombre() + " (" + miCiudad.getPais() + ")</p>");
+                document.write("<h4>Localidad:</h4> <p>" + miCiudad.getNombre() + " (" + miCiudad.getPais() + ")</p>");
 
-            document.write("<h4>Información adicional:</h4>");
-            
-            document.write(miCiudad.getInfoSecundaria());
+                document.write("<h4>Información adicional:</h4>");
+                
+                document.write(miCiudad.getInfoSecundaria());
 
-            document.write("<h4>Coordenadas:</h4>");
-            
-            miCiudad.escribirCoordenadas();
-        </script>
-    </section>
+                document.write("<h4>Coordenadas:</h4>");
+                
+                miCiudad.escribirCoordenadas();
+            </script>
+        </section>
+    </main>
 
 </body>
 </html>
