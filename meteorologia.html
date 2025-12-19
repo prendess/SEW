@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/favicon_johann_zarco.ico" type="image/x-icon">
+    <script src="js/ciudad.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,33 @@
 
     <p><a href="index.html">Inicio</a> >> <strong>Metereología</strong></p>
     
-    <h2>Metereología de MotoGP-Desktop</h2>
-    <p>En desarrollo</p>
+    <h2>Metereología</h2>
+    
+    <section>
+        <h3>Información de la ciudad</h3>
+        <script>
+
+            var miCiudad = new Ciudad("Towcester", "Reino Unido", "Towcestrian");
+
+            var coordenadasTowcester = {
+                latitud: 52.13,
+                longitud: -0.99,
+                altitud: 128
+            };
+            
+            miCiudad.rellenarAtributos(11000, coordenadasTowcester);
+
+            document.write("<h4>Localidad:</h4> <p>" + miCiudad.getNombre() + " (" + miCiudad.getPais() + ")</p>");
+
+            document.write("<h4>Información adicional:</h4>");
+            
+            document.write(miCiudad.getInfoSecundaria());
+
+            document.write("<h4>Coordenadas:</h4>");
+            
+            miCiudad.escribirCoordenadas();
+        </script>
+    </section>
+
 </body>
 </html>
