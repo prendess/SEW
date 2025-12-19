@@ -1,17 +1,18 @@
 <!DOCTYPE HTML>
-
 <html lang="es">
 <head>
-    <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
-    <meta name ="author" content ="Hugo Prendes Menéndez" />
-    <meta name ="description" content ="Documento de juegos proyecto MotoGP Desktop" />
-    <meta name ="keywords" content ="MotoGP, Motor, Moto, Carreras, Circuito, Piloto, Deporte, Ciclomotor, Competición, Temporada, Velocidad, Ayuda, Clasificaciones, Juegos, Meteorología" />
-    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
-    <title>MotoGP - Juegos</title>
+    <meta name="author" content="Hugo Prendes Menéndez" /> <meta name="description" content="Cronómetro del proyecto MotoGP Desktop" />
+    <meta name="keywords" content="MotoGP, Cronómetro, Tiempo, Juego" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotoGP - Cronómetro</title>  
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/favicon_johann_zarco.ico" type="image/x-icon">
+    <script src="js/cronometro.js"></script>
+    <script>
+        const cronometro = new Cronometro();
+    </script>
 </head>
 
 <body>
@@ -28,18 +29,17 @@
         </nav>
     </header>
 
-    <p><a href="index.html">Inicio</a> >> <strong>Juegos</strong></p>
+    <p><a href="index.html">Inicio</a> >> <a href="juegos.html">Juegos</a> >> <strong>Cronómetro</strong></p>
 
     <main>
-        <h2>Juegos</h2>
-        <section>
-            <h3>Listado de juegos:</h3>
-            <ul>
-                <li><a href="memoria.html" title="Acceder al juego de memoria">Juego de memoria con cartas</a></li>
-                <li><a href="cronometro.html" title="Acceder al cronómetro">Cronómetro</a></li>
-            </ul>
-        </section>
-    </main> 
-    
+        <h2>Cronómetro</h2>
+        
+        <p>00:00.0</p>
+
+        <button onclick="cronometro.arrancar()">Arrancar</button>
+        <button onclick="cronometro.parar()">Parar</button>
+        <button onclick="cronometro.reiniciar()">Reiniciar</button>
+
+    </main>
 </body>
 </html>
