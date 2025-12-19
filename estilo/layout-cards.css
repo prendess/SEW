@@ -1,0 +1,20 @@
+/* 0,0,1 */
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 1em; 
+}
+
+/* 0,0,2 */
+main h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 799px) {
+    /* 0,0,1 */
+    main {
+        grid-template-columns: repeat(2, 1fr); /* Propiedad redefinida debido al uso de @media-queries (genera advertencia) */
+    }
+}
