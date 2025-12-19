@@ -18,6 +18,7 @@ main article {
 
 /* Regla con la transformación que permite girar la carta cuando se le pone el atributo personalizado data-estado al valor volteada */
 /* especificidad: 012 */
+main article[data-estado=revelada],
 main article[data-estado=volteada] {
     transform: rotateY(180deg);
 }
