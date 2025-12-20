@@ -1,13 +1,18 @@
 class Cronometro {
+
+    #tiempo;
+    #inicio;
+    #corriendo;
+
     constructor() {
-        this.tiempo = 0;
-        this.inicio = null;
-        this.corriendo = null;
-        this.agregarEventos();
+        this.#tiempo = 0;
+        this.#inicio = null;
+        this.#corriendo = null;
+        this.#agregarEventos();
     }
 
     // Permite eliminar los atributos onclick de los botones
-    agregarEventos() {
+    #agregarEventos() {
         const botones = document.querySelectorAll("main button");
         if (botones.length >= 3) {
             botones[0].addEventListener("click", this.arrancar.bind(this));
@@ -17,34 +22,31 @@ class Cronometro {
     }
 
     arrancar() {
-        if (this.corriendo) return; 
+        if (this.#corriendo) return; 
 
         try {
-            this.inicio = Temporal.Now.instant();
+            this.#inicio = Temporal.Now.instant();
         } catch (error) {
-            this.inicio = new Date();
+            this.#inicio = new Date();
         }
 
-        this.corriendo = setInterval(this.actualizar.bind(this), 100);
+        this.#corriendo = setInterval(this.#actualizar.bind(this), 100);
     }
 
-    actualizar() {
-
+    #actualizar() {
         let actual;
-        
         try {
             actual = Temporal.Now.instant();
-            this.tiempo = actual.since(this.inicio).total({ unit: 'milliseconds' });
+            this.#tiempo = actual.since(this.#inicio).total({ unit: 'milliseconds' });
         } catch (error) {
             actual = new Date();
-            this.tiempo = actual - this.inicio;
+            this.#tiempo = actual - this.#inicio;
         }
-
-        this.mostrar();
+        this.#mostrar();
     }
 
-    mostrar() {
-        let t = this.tiempo;
+    #mostrar() {
+        let t = this.#tiempo;
         
         let minutos = parseInt(t / 60000);
         let segundos = parseInt((t % 60000) / 1000);
@@ -61,15 +63,15 @@ class Cronometro {
     }
 
     parar() {
-        if (this.corriendo) {
-            clearInterval(this.corriendo);
-            this.corriendo = null;
+        if (this.#corriendo) {
+            clearInterval(this.#corriendo);
+            this.#corriendo = null;
         }
     }
 
     reiniciar() {
         this.parar();
-        this.tiempo = 0;
-        this.mostrar();
+        this.#tiempo = 0;
+        this.#mostrar();
     }
 }
