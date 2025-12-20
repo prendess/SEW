@@ -48,13 +48,27 @@
                 
                 miCiudad.rellenarAtributos(11000, coordenadasTowcester);
 
-                document.write("<h4>Localidad:</h4> <p>" + miCiudad.getNombre() + " (" + miCiudad.getPais() + ")</p>");
+                var contenedor = document.querySelector("main section");
 
-                document.write("<h4>Información adicional:</h4>");
+                var h4Localidad = document.createElement("h4");
+                h4Localidad.textContent = "Localidad:";
+                contenedor.appendChild(h4Localidad);
+
+                var pLocalidad = document.createElement("p");
+                pLocalidad.textContent = miCiudad.getNombre() + " (" + miCiudad.getPais() + ")";
+                contenedor.appendChild(pLocalidad);
+
+                var h4Info = document.createElement("h4");
+                h4Info.textContent = "Información adicional:";
+                contenedor.appendChild(h4Info);
                 
-                document.write(miCiudad.getInfoSecundaria());
+                var articleInfo = document.createElement("article");
+                articleInfo.innerHTML = miCiudad.getInfoSecundaria();
+                contenedor.appendChild(articleInfo);
 
-                document.write("<h4>Coordenadas:</h4>");
+                var h4Coords = document.createElement("h4");
+                h4Coords.textContent = "Coordenadas:";
+                contenedor.appendChild(h4Coords);
                 
                 miCiudad.escribirCoordenadas();
             </script>

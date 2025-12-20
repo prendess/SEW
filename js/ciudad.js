@@ -31,9 +31,17 @@ class Ciudad {
     }
 
     escribirCoordenadas() {
-        document.write("<p><strong>Latitud:</strong> " + this.coordenadas.latitud + "</p>");
-        document.write("<p><strong>Longitud:</strong> " + this.coordenadas.longitud + "</p>");
-        document.write("<p><strong>Altitud:</strong> " + this.coordenadas.altitud + " metros</p>");
+        const pLatitud = document.createElement('p');
+        pLatitud.innerHTML = "<strong>Latitud:</strong> " + this.coordenadas.latitud;
+        document.body.appendChild(pLatitud);
+
+        const pLongitud = document.createElement('p');
+        pLongitud.innerHTML = "<strong>Longitud:</strong> " + this.coordenadas.longitud;
+        document.body.appendChild(pLongitud);
+
+        const pAltitud = document.createElement('p');
+        pAltitud.innerHTML = "<strong>Altitud:</strong> " + this.coordenadas.altitud + " metros";
+        document.body.appendChild(pAltitud);
     }
 
 }
