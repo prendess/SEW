@@ -36,44 +36,17 @@
     
         <section>
             <h3>Información de la ciudad</h3>
-            <script>
-
-                var miCiudad = new Ciudad("Towcester", "Reino Unido", "Towcestrian");
-
-                var coordenadasTowcester = {
-                    latitud: 52.13,
-                    longitud: -0.99,
-                    altitud: 128
-                };
-                
-                miCiudad.rellenarAtributos(11000, coordenadasTowcester);
-
-                var contenedor = document.querySelector("main section");
-
-                var h4Localidad = document.createElement("h4");
-                h4Localidad.textContent = "Localidad:";
-                contenedor.appendChild(h4Localidad);
-
-                var pLocalidad = document.createElement("p");
-                pLocalidad.textContent = miCiudad.getNombre() + " (" + miCiudad.getPais() + ")";
-                contenedor.appendChild(pLocalidad);
-
-                var h4Info = document.createElement("h4");
-                h4Info.textContent = "Información adicional:";
-                contenedor.appendChild(h4Info);
-                
-                var articleInfo = document.createElement("article");
-                articleInfo.innerHTML = miCiudad.getInfoSecundaria();
-                contenedor.appendChild(articleInfo);
-
-                var h4Coords = document.createElement("h4");
-                h4Coords.textContent = "Coordenadas:";
-                contenedor.appendChild(h4Coords);
-                
-                miCiudad.escribirCoordenadas();
-            </script>
         </section>
     </main>
 
+    <script>
+        var ciudad = new Ciudad("Towcester", "Reino Unido", "Towcestrian");
+        var coordenadasTowcester = { latitud: 52.13, longitud: -0.99, altitud: 128 };
+        ciudad.rellenarAtributos(11000, coordenadasTowcester);
+        
+        // Código trasladado a ciudad.js para mejor organización y separación de capas
+        ciudad.mostrarEnHTML();
+    </script>
+    
 </body>
 </html>
