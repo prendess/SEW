@@ -38,15 +38,27 @@
         <section>
             <h3>Información de la ciudad</h3>
         </section>
+        <section>
+            <h3>Metereología el día de la carrera</h3>
+        </section>
+        <section>
+            <h3>Metereología los días de entrenamientos libres</h3>
+        </section>
     </main>
 
     <script>
+        // DATOS DE LA CIUDAD
         var ciudad = new Ciudad("Towcester", "Reino Unido", "Towcestrian");
         var coordenadasTowcester = { latitud: 52.13, longitud: -0.99, altitud: 128 };
         ciudad.rellenarAtributos(11000, coordenadasTowcester);
-        
-        // Código trasladado a ciudad.js para mejor organización y separación de capas
-        ciudad.mostrarEnHTML();
+        ciudad.mostrarEnHTML(); // Código trasladado a ciudad.js para separación de capas
+
+        // DATOS METEOROLÓGICOS DE LA CARRERA
+        var fechaCarrera = "2025-05-25";
+        ciudad.verPrevision(fechaCarrera);
+
+        // DATOS METEOROLÓGICOS DE LOS ENTRENAMIENTOS
+        ciudad.verEntrenamientos(fechaCarrera);
     </script>
     
 </body>
