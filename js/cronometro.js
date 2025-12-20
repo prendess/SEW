@@ -3,6 +3,17 @@ class Cronometro {
         this.tiempo = 0;
         this.inicio = null;
         this.corriendo = null;
+        this.agregarEventos();
+    }
+
+    // Permite eliminar los atributos onclick de los botones
+    agregarEventos() {
+        const botones = document.querySelectorAll("main button");
+        if (botones.length >= 3) {
+            botones[0].addEventListener("click", this.arrancar.bind(this));
+            botones[1].addEventListener("click", this.parar.bind(this));
+            botones[2].addEventListener("click", this.reiniciar.bind(this));
+        }
     }
 
     arrancar() {

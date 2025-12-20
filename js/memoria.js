@@ -7,6 +7,18 @@ class Memoria {
         this.tablero_bloqueado = false;
         this.cronometro = new Cronometro();
         this.cronometro.arrancar();
+        this.agregarEventosClick(); 
+    }
+
+    // Permite eliminar los atributos onclick de las cartas para el manejo de eventos
+    agregarEventosClick() {
+        const cartas = document.querySelectorAll('main article');
+        
+        cartas.forEach(carta => {
+            carta.addEventListener('click', (event) => {
+                this.voltearCarta(event.currentTarget);
+            });
+        });
     }
 
     voltearCarta(carta) {
