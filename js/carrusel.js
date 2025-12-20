@@ -20,11 +20,11 @@ class Carrusel {
             format: "json"
         })
         .done((data) => {
-            this.procesarJSONFotografias(data);
+            this.#procesarJSONFotografias(data);
         });
     }
 
-    procesarJSONFotografias(data) {
+    #procesarJSONFotografias(data) {
         this.#fotos = [];
         for (let i = 0; i <= this.#maximo; i++) {
             if (i < data.items.length) {
@@ -37,11 +37,11 @@ class Carrusel {
             }
         }
         if (this.#fotos.length > 0) {
-            this.mostrarFotografias();
+            this.#mostrarFotografias();
         }
     }
 
-    mostrarFotografias() {
+    #mostrarFotografias() {
         let foto = this.#fotos[this.#actual];
 
         var articulo = $("<article></article>");
@@ -52,10 +52,10 @@ class Carrusel {
         articulo.append(img);
         $("body").append(articulo);
 
-        setInterval(this.cambiarFotografia.bind(this), 3000);
+        setInterval(this.#cambiarFotografia.bind(this), 3000);
     }
 
-    cambiarFotografia() {
+    #cambiarFotografia() {
         this.#actual++;
 
         if (this.#actual > this.#maximo) {
