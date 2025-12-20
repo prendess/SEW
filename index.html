@@ -12,6 +12,14 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/favicon_johann_zarco.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script>
+        $(document).ready(function() {
+            var carrusel = new Carrusel("Silverstone MotoGP");
+            carrusel.getFotografias();
+        });
+    </script>
 </head>
 
 <body>
@@ -27,7 +35,5 @@
             <a href="ayuda.html" title="Ayuda y soporte">Ayuda</a>
         </nav>
     </header>
-    
-    <p>En desarrollo</p>
 </body>
 </html>

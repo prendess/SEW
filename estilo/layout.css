@@ -18,6 +18,12 @@ nav {
     align-items: center;
 }
 
+/* 0,0,3 */
+    article h2 + img {
+        width: 100%;
+        height: auto;
+    }
+
 @media (min-width: 320px) and (max-width: 799px) {
 
     /* 0,0,1 */
@@ -62,5 +68,12 @@ nav {
         width: 70%;
         height: auto;
     } */
+
+    /* 0,0,3 */
+    article h2 + img {
+        width: 100%; /* Propiedad redefinida debido al uso de @media-queries (genera advertencia) */
+        height: auto; /* Propiedad redefinida debido al uso de @media-queries (genera advertencia) */
+        display: block;
+    }
     
 }
