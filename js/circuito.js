@@ -75,3 +75,72 @@ class Circuito {
         }
     }
 }
+
+class CargadorSVG {
+
+    #supports
+
+    constructor() {
+        this.#comprobarApiFile();
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => this.#inicializarEventos());
+        } else {
+            this.#inicializarEventos();
+        }
+    }
+
+    #inicializarEventos() {
+        const inputs = document.querySelectorAll('input[type="file"]');
+        const inputSVG = Array.from(inputs).find(input => input.accept === ".svg");
+        if (inputSVG) {
+            inputSVG.addEventListener('change', (evento) => {
+                this.#leerArchivoSVG(evento.target.files);
+            });
+        }
+    }
+
+    #comprobarApiFile() {
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            this.#supports = true;
+        } else {
+            this.#supports = false;
+            const mensajeError = document.createElement("p");
+            mensajeError.textContent = "Este navegador no soporta la API File de HTML5.";
+            document.querySelector("main").appendChild(mensajeError);
+        }
+    }
+
+    #leerArchivoSVG(archivos) {
+        if (this.#supports) {
+            const archivo = archivos[0];
+            if (archivo && archivo.name.endsWith(".svg")) {
+                const lector = new FileReader();
+                lector.onload = (e) => {
+                    this.#insertarSVG(e.target.result);
+                };
+                lector.readAsText(archivo);
+            } else {
+                alert("Por favor, seleccione un archivo .svg válido.");
+            }
+        }
+    }
+
+    #insertarSVG(contenidoSVG) {
+        const section = document.querySelectorAll("section")[1];
+        
+        const svgPrevio = section.querySelector("svg");
+        if (svgPrevio) {
+            section.removeChild(svgPrevio);
+        }
+
+        const contenedor = document.createElement("article");
+        contenedor.innerHTML = contenidoSVG;
+
+        const svgElement = contenedor.querySelector("svg");
+        if (svgElement) {
+            svgElement.style.maxWidth = "100%";
+            svgElement.style.height = "auto";
+            section.appendChild(svgElement);
+        }
+    }
+}

@@ -39,9 +39,15 @@
             <p>Seleccione el archivo <strong>InfoCircuito.html</strong> (ubicado en la carpeta xml):</p>
             <input type="file"/>
         </section>
+        <section>
+            <h3>Cargar representación visual</h3>
+            <p>Seleccione el archivo <strong>.svg</strong> de altimetría del circuito (ubicado en la carpeta xml):</p>
+            <input type="file" accept=".svg" />
+    </section>
     </main>
     <script>
         const miCircuito = new Circuito();
+        const miSVG = new CargadorSVG();
     </script>
 </body>
 </html>
