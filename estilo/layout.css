@@ -75,5 +75,11 @@ nav {
         height: auto; /* Propiedad redefinida debido al uso de @media-queries (genera advertencia) */
         display: block;
     }
+
+    /* 0,0,3 */
+    section figure img, 
+    section figure video {
+        width: 100%;
+    }
     
 }

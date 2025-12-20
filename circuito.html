@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/favicon_johann_zarco.ico" type="image/x-icon">
+    <script src="js/circuito.js"></script>
 </head>
 
 <body>
@@ -32,8 +33,15 @@
     
     <main>
         <h2>Circuito de MotoGP-Desktop</h2>
-        <p>En desarrollo</p>
+
+        <section>
+            <h3>Cargar información del circuito</h3>
+            <p>Seleccione el archivo <strong>InfoCircuito.html</strong> (ubicado en la carpeta xml):</p>
+            <input type="file"/>
+        </section>
     </main>
-    
+    <script>
+        const miCircuito = new Circuito();
+    </script>
 </body>
 </html>

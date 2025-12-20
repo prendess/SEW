@@ -244,3 +244,12 @@ body > article h2 + img {
     object-fit: cover;
     display: block;
 }
+
+/* 0,0,3 */
+section figure img, 
+section figure video {
+    width: 33.33%;
+    height: auto;
+    display: block;
+    margin: 0.5em 0;
+}
