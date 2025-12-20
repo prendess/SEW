@@ -14,6 +14,14 @@ main h2 {
     text-align: center;
 }
 
+/* 0,0,2 */
+main p {
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+    text-align: center;  /* Centra el texto */
+    font-size: 1.5em;    /* Opcional: Aumentar tamaño para visibilidad */
+    font-weight: bold;   /* Opcional: Negrita para resaltar */
+}
+
 @media (min-width: 320px) and (max-width: 799px) {
     /* 0,0,1 */
     main {

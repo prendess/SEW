@@ -5,6 +5,8 @@ class Memoria {
         this.segunda_carta = null;
         this.barajarCartas();
         this.tablero_bloqueado = false;
+        this.cronometro = new Cronometro();
+        this.cronometro.arrancar();
     }
 
     voltearCarta(carta) {
@@ -55,6 +57,7 @@ class Memoria {
         }
 
         if (todasReveladas) {
+            this.cronometro.parar();
             // Para que no salga antes de girar la última tarjeta
             setTimeout(() => {
                 alert("¡Enhorabuena! ¡Has ganado!");
