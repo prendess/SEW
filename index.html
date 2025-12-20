@@ -14,10 +14,16 @@
     <link rel="icon" href="multimedia/favicon_johann_zarco.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/carrusel.js"></script>
+    <script src="js/noticias.js"></script>
     <script>
         $(document).ready(function() {
+            // CARRUSEL DE IMÁGENES
             var carrusel = new Carrusel("Silverstone MotoGP");
             carrusel.getFotografias();
+
+            // NOTICIAS
+            var noticias = new Noticias();
+            noticias.verNoticias();
         });
     </script>
 </head>
