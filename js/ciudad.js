@@ -41,12 +41,8 @@ class Ciudad {
         pLocalidad.textContent = this.nombre + " (" + this.pais + ")";
         contenedor.appendChild(pLocalidad);
 
-        var h4Info = document.createElement("h4");
-        h4Info.textContent = "Información adicional:";
-        contenedor.appendChild(h4Info);
-        
         var articleInfo = document.createElement("article");
-        articleInfo.innerHTML = this.getInfoSecundaria();
+        articleInfo.innerHTML = "<h4>Información adicional:</h4>" + this.getInfoSecundaria()
         contenedor.appendChild(articleInfo);
 
         var h4Coords = document.createElement("h4");
