@@ -32,7 +32,7 @@ article img {
     height: 100%;
     position: absolute;
     border-radius: 0.5em;
-    background: #1C7CCC; /* Color de fondo sin color de primer plano (genera advertencia)*/
+    background: #196719; /* Color de fondo sin color de primer plano (genera advertencia)*/
     backface-visibility: hidden;
 }
 
@@ -44,6 +44,7 @@ article h3 {
     justify-content: center;
     align-items: center;
     margin: 0;
+    color: #ffffff;
 }
 
 /* Regla para rotar las imágenes y que se vean correctamente cuando se giran las cartas */
