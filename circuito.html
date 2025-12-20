@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/favicon_johann_zarco.ico" type="image/x-icon">
     <script src="js/circuito.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpd4fgm4rm3gRyOaOwi9Ze3Fnn18rMbxc"></script>
 </head>
 
 <body>
@@ -43,11 +44,17 @@
             <h3>Cargar representación visual</h3>
             <p>Seleccione el archivo <strong>.svg</strong> de altimetría del circuito (ubicado en la carpeta xml):</p>
             <input type="file" accept=".svg" />
-    </section>
+        </section>
+        <section>
+            <h3>Mapa del circuito</h3>
+            <p>Seleccione el archivo <strong>circuito.kml</strong> (ubicado en la carpeta xml):</p>
+            <input type="file" accept=".kml" />
+        </section>
     </main>
     <script>
         const miCircuito = new Circuito();
         const miSVG = new CargadorSVG();
+        const miKML = new CargadorKML();
     </script>
 </body>
 </html>

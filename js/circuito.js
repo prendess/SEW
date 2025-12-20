@@ -138,9 +138,107 @@ class CargadorSVG {
 
         const svgElement = contenedor.querySelector("svg");
         if (svgElement) {
-            svgElement.style.maxWidth = "100%";
-            svgElement.style.height = "auto";
             section.appendChild(svgElement);
         }
+    }
+}
+
+class CargadorKML {
+
+    #supports;
+    #mapa;
+
+    constructor() {
+        this.#comprobarApiFile();
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => this.#inicializarEventos());
+        } else {
+            this.#inicializarEventos();
+        }
+    }
+
+    #inicializarEventos() {
+        const inputs = document.querySelectorAll('input[type="file"]');
+        const inputKML = Array.from(inputs).find(input => input.accept === ".kml");
+        if (inputKML) {
+            inputKML.addEventListener('change', (evento) => {
+                this.#leerArchivoKML(evento.target.files);
+            });
+        }
+    }
+
+    #comprobarApiFile() {
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            this.#supports = true;
+        } else {
+            this.#supports = false;
+        }
+    }
+
+    #leerArchivoKML(archivos) {
+        if (this.#supports) {
+            const archivo = archivos[0];
+            if (archivo && archivo.name.endsWith(".kml")) {
+                const lector = new FileReader();
+                lector.onload = (e) => {
+                    const contenidoKML = e.target.result;
+                    const parser = new DOMParser();
+                    const kmlDoc = parser.parseFromString(contenidoKML, "application/xml");
+                    
+                    const namespace = "http://www.opengis.net/kml/2.2";
+                    const coordsNode = kmlDoc.getElementsByTagNameNS(namespace, "coordinates")[0];
+                    
+                    if (coordsNode) {
+                        const textoCoordenadas = coordsNode.textContent.trim();
+                        const puntos = textoCoordenadas.split(/\s+/).map(p => {
+                            const [longitud, latitud] = p.split(",").map(Number);
+                            return { lat: latitud, lng: longitud };
+                        });
+                        
+                        this.#insertarCapaKML(puntos);
+                    }
+                };
+                lector.readAsText(archivo);
+            }
+        }
+    }
+
+    #insertarCapaKML(coordenadas) {
+        const main = document.querySelector("main");
+        
+        // Eliminamos mapa previo si existe
+        const mapaPrevio = document.querySelector("main > div");
+        if (mapaPrevio) {
+            main.removeChild(mapaPrevio);
+        }
+
+        // Crear el contenedor div único permitido
+        const contenedorMapa = document.createElement("div");
+        main.appendChild(contenedorMapa);
+
+        const opciones = {
+            center: coordenadas[0],
+            zoom: 13,
+            mapTypeId: 'terrain'
+        };
+
+        this.#mapa = new google.maps.Map(contenedorMapa, opciones);
+
+        // Marcar el punto de inicio del circuito
+        new google.maps.Marker({
+            position: coordenadas[0],
+            map: this.#mapa,
+            title: "Punto de Inicio"
+        });
+
+        // Dibujar la polilínea del circuito
+        const rutaCircuito = new google.maps.Polyline({
+            path: coordenadas,
+            geodesic: true,
+            strokeColor: "#ff0000",
+            strokeOpacity: 0.7,
+            strokeWeight: 5
+        });
+        rutaCircuito.setMap(this.#mapa);
     }
 }
