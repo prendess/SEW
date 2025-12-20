@@ -64,11 +64,16 @@ class Circuito {
 
                 const datosGenerales = docCircuito.querySelector("main").innerHTML;
 
-                const mainDestino = document.querySelector("main");
-                const nuevaSeccion = document.createElement("section");
-                nuevaSeccion.innerHTML = datosGenerales;
-                
-                mainDestino.appendChild(nuevaSeccion);
+                // Seleccionamos la primera sección (HTML)
+                const seccionInfo = document.querySelectorAll("main > section")[0];
+    
+                // Limpieza: eliminamos cualquier article previo antes de añadir el nuevo
+                const previo = seccionInfo.querySelector("article");
+                if (previo) seccionInfo.removeChild(previo);
+
+                const contenedorDatos = document.createElement("article");
+                contenedorDatos.innerHTML = datosGenerales;
+                seccionInfo.appendChild(contenedorDatos);
             };
 
             lector.readAsText(archivo);
