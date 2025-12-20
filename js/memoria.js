@@ -1,13 +1,25 @@
 class Memoria {
 
     constructor() {
-        this.tablero_bloqueado = false;
         this.primera_carta = null;
         this.segunda_carta = null;
+        this.barajarCartas();
+        this.tablero_bloqueado = false;
     }
 
     voltearCarta(carta) {
+        if (this.tablero_bloqueado) return;
+        if (carta.getAttribute('data-estado') === 'revelada') return;
+        if (carta.getAttribute('data-estado') === 'volteada') return;
+
         carta.setAttribute('data-estado', 'volteada');
+
+        if (this.primera_carta === null) {
+            this.primera_carta = carta;
+        } else {
+            this.segunda_carta = carta;
+            this.comprobarPareja();
+        }
     }
 
     barajarCartas() {
@@ -41,10 +53,30 @@ class Memoria {
                 break;
             }
         }
-        
+
         if (todasReveladas) {
-            alert("¡Enhorabuena! ¡Has ganado!");
+            // Para que no salga antes de girar la última tarjeta
+            setTimeout(() => {
+                alert("¡Enhorabuena! ¡Has ganado!");
+            }, 500);
         }
+    }
+
+    cubrirCartas() {
+        this.tablero_bloqueado = true;
+        // Delay para que el jugador pueda ver las cartas antes de darles la vuelta de nuevo
+        setTimeout(() => {
+            this.primera_carta.removeAttribute('data-estado');
+            this.segunda_carta.removeAttribute('data-estado');
+            this.reiniciarAtributos();
+        }, 1500);
+    }
+
+    comprobarPareja() {
+        // La imagen está en el segundo hijo del artículo (el primero es un h3)
+        let valor1 = this.primera_carta.children[1].getAttribute("src");
+        let valor2 = this.segunda_carta.children[1].getAttribute("src");
+        (valor1 === valor2) ? this.deshabilitarCartas() : this.cubrirCartas();
     }
 
 }
