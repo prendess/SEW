@@ -53,7 +53,7 @@ class Clasificacion {
             echo "<section>";
             echo "<h3>Clasificación del Mundial</h3>";
             echo "<table>";
-            echo "<caption>Tabla de puntuaciones actuales</caption>";
+            echo "<caption>Tabla de puntuaciones tras el GP de Silverstone</caption>";
             echo "<thead>";
             echo "<tr>";
             echo "<th scope='col'>Posición</th>";
