@@ -3,32 +3,85 @@
 class Clasificacion {
 
     private $documento;
+    private $xml;
 
     public function __construct() {
         $this->documento = 'xml/circuitoEsquema.xml';
     }
 
     public function consultar() {
-
-        $contenidoCompleto = "";
-        
-        $archivo = fopen ($this->documento, "r");
-
-        if ($archivo !== false) {
-            while (!feof($archivo)) {
-                $linea = fgets($archivo); 
-                $contenidoCompleto .= $linea;
-            }
-            fclose ($archivo);
+        if (file_exists($this->documento)) {
+            $this->xml = simplexml_load_file($this->documento);
         } else {
-            error_log("Error al abrir el archivo: " . $this->documento);
-            $contenidoCompleto = "Error: El archivo " . $this->documento . " no se pudo abrir.";
+            echo "<p>Error: No se encuentra el archivo XML.</p>";
         }
-        
-        return $contenidoCompleto;
+    }
+
+    public function obtenerGanador() {
+        if ($this->xml) {
+            $nombre = $this->xml->vencedor->nombre;
+            $tiempo = (string)$this->xml->vencedor->tiempo; // A string para manipularlo mejor
+
+            // 1. DateInterval (usado para mostrar la duración con formato mm:ss) falla al procesar milisegundos, 
+            // así que los extraemos y los tratamos por separado.
+
+            $milisegundos = '000'; // Valor por defecto
+            // Buscamos dígitos (\d+), seguidos de un punto (\.), seguidos de más dígitos capturados (\d+) y una S.
+            if (preg_match('/\d+\.(\d+)S/', $tiempo, $coincidencias)) {
+                $milisegundos = $coincidencias[1]; // Donde se almacena la parte que coincide con el patrón (lo que hay entre paréntesis)
+            }
+
+            $tiempoLimpio = preg_replace('/\.\d+/', '', $tiempo); // De la misma forma, cogemos los milisegundos y los eliminamos del string original.
+
+            try {
+                $duracion = new DateInterval($tiempoLimpio);
+                $tiempoFormateado = $duracion->format('%i:%S') . '.' . $milisegundos;
+
+                echo "<section>";
+                echo "<h3>Ganador de la carrera</h3>";
+                echo "<p><strong>Piloto:</strong> " . $nombre . "</p>";
+                echo "<p><strong>Tiempo:</strong> " . $tiempoFormateado . "</p>";
+                echo "</section>";
+            } catch (Exception $e) {
+                echo "<p>Error al procesar el tiempo.</p>";
+            }
+        }
+    }
+
+    public function obtenerClasificacion() {
+        if ($this->xml) {
+            echo "<section>";
+            echo "<h3>Clasificación del Mundial</h3>";
+            echo "<table>";
+            echo "<caption>Tabla de puntuaciones actuales</caption>";
+            echo "<thead>";
+            echo "<tr>";
+            echo "<th scope='col'>Posición</th>";
+            echo "<th scope='col'>Piloto</th>";
+            echo "<th scope='col'>Puntos</th>";
+            echo "</tr>";
+            echo "</thead>";
+            echo "<tbody>";
+
+            // Iteración sobre los elementos del XML
+            foreach ($this->xml->clasificacion->posicion as $posicion) {
+                echo "<tr>";
+                echo "<td>" . $posicion->puesto . "</td>";
+                echo "<td>" . $posicion->nombre . "</td>";
+                echo "<td>" . $posicion->puntosMundial . "</td>";
+                echo "</tr>";
+            }
+
+            echo "</tbody>";
+            echo "</table>";
+            echo "</section>";
+        }
     }
 
 }
+
+$clasificacion = new Clasificacion();
+$clasificacion->consultar();
 
 ?>
 
@@ -64,7 +117,13 @@ class Clasificacion {
 
     <p><a href="index.html">Inicio</a> >> <strong>Clasificaciones</strong></p>
     
-    <h2>Clasificaciones de MotoGP-Desktop</h2>
-    <p>En desarrollo</p>
+    <main>        
+        <h2>Clasificaciones de MotoGP-Desktop</h2>
+        
+        <?php
+            $clasificacion->obtenerGanador();
+            $clasificacion->obtenerClasificacion();
+        ?>
+    </main>
 </body>
 </html>
