@@ -33,17 +33,15 @@ class Configuracion {
         // Añadimos de nuevo los dispositivos por defecto
         $sql = "INSERT INTO DISPOSITIVO (nombre_dispositivo) VALUES ('Ordenador'), ('Tableta'), ('Teléfono')";
         $this->db->query($sql);
-
-        echo "<p>Base de datos reiniciada. Datos eliminados y dispositivos restablecidos.</p>";
     }
 
     // Borrar la BD completamente
     public function borrarBaseDatos() {
         $sql = "DROP DATABASE " . $this->dbname;
         if ($this->db->query($sql) === TRUE) {
-            echo "<p>Base de datos " . $this->dbname . " eliminada correctamente.</p>";
+            
         } else {
-            echo "<p>Error eliminando la base de datos: " . $this->db->error . "</p>";
+            
         }
     }
 
@@ -76,7 +74,7 @@ class Configuracion {
             fclose($output);
             exit();
         } else {
-            echo "<p>No hay datos para exportar.</p>";
+            
         }
     }
 }
