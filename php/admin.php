@@ -39,7 +39,7 @@
         </nav>
     </header>
 
-    <p><a href="index.html">Inicio</a> >> <a href="juegos.html">Juegos</a> >> <strong>Configuración BD para pruebas</strong></p>
+    <p><a href="../index.html">Inicio</a> >> <a href="../juegos.html">Juegos</a> >> <strong>Configuración BD para pruebas</strong></p>
 
     <main>
         <h2>Configuración de la Base de Datos</h2>
