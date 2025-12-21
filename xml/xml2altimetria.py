@@ -6,32 +6,36 @@ class Svg(object):
     Genera archivos SVG con rectángulos, círculos, líneas, polilíneas y texto
     """
     def __init__(self):
-        self.raiz = ET.Element('svg', xmlns="http://www.w3.org/2000/svg", version="2.0")
+        self.raiz = ET.Element('svg', xmlns="http://www.w3.org/2000/svg")
 
     def addRect(self, x, y, width, height, fill, strokeWidth, stroke):
         ET.SubElement(self.raiz, 'rect',
-        x=x, y=y, width=width, height=height,
-        fill=fill, strokeWidth=strokeWidth, stroke=stroke)
+        x=str(x), y=str(y), width=str(width), height=str(height),
+        fill=fill, stroke=stroke,
+        **{'stroke-width': str(strokeWidth)})
 
     def addCircle(self, cx, cy, r, fill):
         ET.SubElement(self.raiz, 'circle',
-        cx=cx, cy=cy, r=r, fill=fill)
+        cx=str(cx), cy=str(cy), r=str(r), fill=fill)
 
     def addLine(self, x1, y1, x2, y2, stroke, strokeWidth):
         ET.SubElement(self.raiz, 'line',
-        x1=x1, y1=y1, x2=x2, y2=y2,
-        stroke=stroke, strokeWidth=strokeWidth)
+        x1=str(x1), y1=str(y1), x2=str(x2), y2=str(y2),
+        stroke=stroke,
+        **{'stroke-width': str(strokeWidth)})
 
     def addPolyline(self, points, stroke, strokeWidth, fill):
         ET.SubElement(self.raiz, 'polyline',
         points=points,
-        stroke=stroke, strokeWidth=strokeWidth, fill=fill)
+        stroke=stroke, fill=fill,
+        **{'stroke-width': str(strokeWidth)})
 
     def addText(self, texto, x, y, fontFamily, fontSize, style):
-        ET.SubElement(self.raiz, 'text',
-        x=x, y=y,
-        fontFamily=fontFamily, fontSize=fontSize,
-        style=style).text = texto
+        elemento = ET.SubElement(self.raiz, 'text',
+        x=str(x), y=str(y),
+        style=style,
+        **{'font-family': fontFamily, 'font-size': str(fontSize)})
+        elemento.text = texto
 
     def escribir(self, nombreArchivoSVG):
         arbol = ET.ElementTree(self.raiz)
