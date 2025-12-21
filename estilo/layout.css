@@ -92,6 +92,7 @@ main > div {
     
     /* 0,0,2 */
     main > div {
-        height: 300px; /* Propiedad redefinida debido al uso de @media-queries */
+        height: 20em; /* Propiedad redefinida debido al uso de @media-queries */
     }
+
 }

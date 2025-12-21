@@ -131,19 +131,13 @@ class CargadorSVG {
     }
 
     #insertarSVG(contenidoSVG) {
-        const section = document.querySelectorAll("section")[1];
+        const contenedor = document.querySelector("aside");
         
-        const svgPrevio = section.querySelector("svg");
-        if (svgPrevio) {
-            section.removeChild(svgPrevio);
-        }
-
-        const contenedor = document.createElement("article");
-        contenedor.innerHTML = contenidoSVG;
-
-        const svgElement = contenedor.querySelector("svg");
-        if (svgElement) {
-            section.appendChild(svgElement);
+        if (contenedor) {
+            contenedor.innerHTML = "";
+            contenedor.innerHTML = contenidoSVG;
+        } else {
+            console.error("No se pudo mostar el SVG en el documento.");
         }
     }
 }
