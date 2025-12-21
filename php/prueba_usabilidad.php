@@ -183,22 +183,22 @@ elseif ($estado == 'fin' && isset($_POST['guardar_observacion'])) {
                     <input type="hidden" name="estado" value="observador" />
                     <fieldset>
                         <legend>Preguntas</legend>
-                        <p><label>1. Puntos Johann Zarco 2024: <input type="number" name="p1" required /></label></p>
-                        <p><label>2. Primer equipo Zarco MotoGP: <input type="text" name="p2" required /></label></p>
+                        <p><label>1. Puntos de Johann Zarco en 2024: <input type="number" name="p1" required /></label></p>
+                        <p><label>2. Primer equipo de Zarco en MotoGP: <input type="text" name="p2" required /></label></p>
                         <p><label>3. Equipo actual: <input type="text" name="p3" required /></label></p>
                         <p><label>4. ¿Tiene Instagram? <select name="p4"><option value="Si">Sí</option><option value="No">No</option></select></label></p>
-                        <p><label>5. Amanecer Silverstone 2025: <input type="time" name="p5" required /></label></p>
-                        <p><label>6. Habitantes Towcester: <input type="number" name="p6" required /></label></p>
-                        <p><label>7. ¿Llovió Silverstone 2025? <select name="p7"><option value="Si">Sí</option><option value="No">No</option></select></label></p>
-                        <p><label>8. Ganador Silverstone 2025: <input type="text" name="p8" required /></label></p>
-                        <p><label>9. Tercero mundial tras carrera: <input type="text" name="p9" required /></label></p>
-                        <p><label>10. ¿Tarjeta RedBull en memoria? <select name="p10"><option value="Si">Sí</option><option value="No">No</option></select></label></p>
+                        <p><label>5. Hora de amanecer en el GP de Silverstone 2025: <input type="time" name="p5" required /></label></p>
+                        <p><label>6. Habitantes de Towcester (localidad de Silverstone): <input type="number" name="p6" required /></label></p>
+                        <p><label>7. ¿Llovió en algún momento el día del GP de Silverstone 2025 de MotoGP? <select name="p7"><option value="Si">Sí</option><option value="No">No</option></select></label></p>
+                        <p><label>8. Ganador del GP de Silverstone 2025 de MotoGP: <input type="text" name="p8" required /></label></p>
+                        <p><label>9. Tercero en el mundial de MotoGP tras la carrera de Silverstone 2025: <input type="text" name="p9" required /></label></p>
+                        <p><label>10. ¿Hay una tarjeta de RedBull en el juego de memoria? <select name="p10"><option value="Si">Sí</option><option value="No">No</option></select></label></p>
                     </fieldset>
                     <fieldset>
                         <legend>Valoración</legend>
-                        <p><label>Puntúa (0-10): <input type="number" name="valoracion" min="0" max="10" required /></label></p>
-                        <p><label>Comentarios:<br/> <textarea name="comentarios" rows="3" cols="50"></textarea></label></p>
-                        <p><label>Propuestas:<br/> <textarea name="propuestas" rows="3" cols="50"></textarea></label></p>
+                        <p><label>Puntúa la aplicación (0-10): <input type="number" name="valoracion" min="0" max="10" required /></label></p>
+                        <p><label>Comentarios adicionales:<br/> <textarea name="comentarios" rows="3" cols="50"></textarea></label></p>
+                        <p><label>Propuestas de mejora:<br/> <textarea name="propuestas" rows="3" cols="50"></textarea></label></p>
                     </fieldset>
                     <p><button type="submit" name="terminar">Terminar Prueba</button></p>
                 </form>

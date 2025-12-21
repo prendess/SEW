@@ -131,7 +131,7 @@ class Ciudad {
 
         // Por si se ha llamado antes
         contenedorMeteo.empty();
-        contenedorMeteo.append("<h3>Metereología el día de la carrera</h3>");
+        contenedorMeteo.append("<h3>Meteorología el día de la carrera</h3>");
 
         // Datos Diarios
         var divDiario = $("<div></div>");
@@ -188,7 +188,7 @@ class Ciudad {
                 m.#mostrarMeteorologia(datosProcesados, fechaCarrera);
             })
             .fail(function(jqXHR, textStatus) {
-                $("main section:nth-of-type(2)").append("<p style='color:red'>Error al cargar meteorología: " + textStatus + "</p>");
+                $("main section:nth-of-type(2)").append("<p>Error al cargar meteorología: " + textStatus + "</p>");
             });
     }
 
@@ -306,7 +306,7 @@ class Ciudad {
                 me.#mostrarMeteorologiaEntrenos(datosProcesados);
             })
             .fail(function(jqXHR, textStatus) {
-                $("main section:nth-of-type(3)").append("<p style='color:red'>Error al cargar entrenamientos: " + textStatus + "</p>");
+                $("main section:nth-of-type(3)").append("<p>Error al cargar entrenamientos: " + textStatus + "</p>");
             });
     }
 
