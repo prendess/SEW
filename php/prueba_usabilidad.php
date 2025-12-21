@@ -31,6 +31,7 @@ $mensaje = "";
 
 // LÓGICA DEL FORMULARIO
 
+// Al entrar al test guardamos los datos del usuario
 if ($estado == 'test' && isset($_POST['comenzar'])) {
     $_SESSION['datos_usuario'] = [
         'nombre' => $_POST['nombre'], 
@@ -46,6 +47,8 @@ if ($estado == 'test' && isset($_POST['comenzar'])) {
     $timer->arrancar();
     $_SESSION['cronometro_test'] = $timer; // Guardamos estado
 }
+
+// Al añadir observaciones del facilitador finaliza el test y guardamos todo
 elseif ($estado == 'observador' && isset($_POST['terminar'])) {
     // Llegado al apartado de observaciones, paramos el cronómetro
     $timer->parar(); 
@@ -88,7 +91,7 @@ elseif ($estado == 'observador' && isset($_POST['terminar'])) {
     if($stmt_test->execute()){
         $id_test = $db->insert_id;
         $_SESSION['id_test_creado'] = $id_test; 
-        $mensaje = "Prueba guardada. Tiempo registrado: " . $timer->mostrar();
+        $mensaje = "Prueba guardada";
     } else {
         $mensaje = "Error al guardar: " . $db->error;
     }
@@ -133,11 +136,7 @@ elseif ($estado == 'fin' && isset($_POST['guardar_observacion'])) {
         </nav>
     </header>
 
-    <p>
-        <a href="../index.html">Inicio</a> >> 
-        <a href="../juegos.html">Juegos</a> >> 
-        <strong>Prueba Usabilidad</strong>
-    </p>
+    <p><a href="../index.html">Inicio</a> >> <a href="../juegos.html">Juegos</a> >> <strong>Prueba Usabilidad</strong></p>
 
     <main>
         <h2>Prueba de Usabilidad</h2>
