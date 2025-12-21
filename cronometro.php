@@ -108,7 +108,7 @@ if (isset($_POST['accion'])) {
         </nav>
     </header>
 
-    <p><a href="index.html">Inicio</a> >> <strong>Cronómetro</strong></p>
+    <p><a href="index.html">Inicio</a> >> <a href="juegos.html">Juegos</a> >> <strong>Cronómetro PHP</strong></p>
 
     <main>
         <article>
