@@ -47,35 +47,49 @@ class Configuracion {
 
     // Exportar datos a CSV
     public function exportarCSV() {
-        $sql = "SELECT u.id_usuario, u.profesion, u.edad, u.genero, u.pericia_informatica, 
-                       d.nombre_dispositivo, t.tiempo_completado, t.completado, t.valoracion, 
-                       t.comentarios_usuario, o.comentarios_facilitador
-                FROM USUARIO u
-                LEFT JOIN TEST_USABILIDAD t ON u.id_usuario = t.id_usuario
-                LEFT JOIN DISPOSITIVO d ON t.id_dispositivo = d.id_dispositivo
-                LEFT JOIN OBSERVACION_FACILITADOR o ON t.id_test = o.id_test";
+    // Se añade t.propuestas_mejora a la consulta
+    $sql = "SELECT u.id_usuario, u.profesion, u.edad, u.genero, u.pericia_informatica, 
+            d.nombre_dispositivo, t.tiempo_completado, t.completado, t.valoracion, 
+            t.comentarios_usuario, t.propuestas_mejora, o.comentarios_facilitador
+            FROM USUARIO u
+            LEFT JOIN TEST_USABILIDAD t ON u.id_usuario = t.id_usuario
+            LEFT JOIN DISPOSITIVO d ON t.id_dispositivo = d.id_dispositivo
+            LEFT JOIN OBSERVACION_FACILITADOR o ON t.id_test = o.id_test";
 
-        $resultado = $this->db->query($sql);
+    $resultado = $this->db->query($sql);
 
-        if ($resultado->num_rows > 0) {
-            // Cabeceras para forzar la descarga del archivo
-            header('Content-Type: text/csv; charset=utf-8');
-            header('Content-Disposition: attachment; filename=datos_usabilidad.csv');
+    if ($resultado->num_rows > 0) {
+        // Cabeceras para forzar la descarga del archivo
+        header('Content-Type: text/csv; charset=utf-8');
+        header('Content-Disposition: attachment; filename=datos_usabilidad.csv');
 
-            $output = fopen('php://output', 'w');
+        $output = fopen('php://output', 'w');
 
-            // Encabezados de las columnas
-            fputcsv($output, array('ID', 'Profesion', 'Edad', 'Genero', 'Pericia', 'Dispositivo', 'Tiempo(s)', 'Completado', 'Valoracion', 'Comentarios User', 'Observaciones Facilitador'));
+        // Encabezados de las columnas
+        fputcsv($output, array(
+            'ID', 
+            'Profesion', 
+            'Edad', 
+            'Genero', 
+            'Pericia', 
+            'Dispositivo', 
+            'Tiempo(s)', 
+            'Completado', 
+            'Valoracion', 
+            'Comentarios User', 
+            'Propuestas Mejora', 
+            'Observaciones Facilitador'
+        ));
 
-            // Datos
-            while ($row = $resultado->fetch_assoc()) {
-                fputcsv($output, $row);
-            }
-            fclose($output);
-            exit();
-        } else {
-            
+        // Datos
+        while ($row = $resultado->fetch_assoc()) {
+            fputcsv($output, $row);
         }
+        fclose($output);
+        exit();
+    } else {
+
     }
+}
 }
 ?>
